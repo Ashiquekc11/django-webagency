@@ -1,5 +1,3 @@
-import imp
-from operator import concat
 from django.contrib import admin
 from .models import Contact, Blog
 
