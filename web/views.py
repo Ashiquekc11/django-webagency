@@ -3,10 +3,13 @@ from django.http import HttpResponse
 from django.urls import reverse
 from django.contrib.auth.decorators import login_required
 import json
+from .models import Author, Contact, Blog, Project, Service, Slider, Testimonial
 
 
 def index(request):
-    context = {"is_index": True}
+    sliders = Slider.objects.all()
+    print (sliders)
+    context = {"is_index": True, "sliders": sliders, }
     return render(request, "web/index.html", context)
 
 
@@ -39,9 +42,11 @@ def projectdetails(request):
     context = {"is_projectdetails": True}
     return render(request, "web/project-details.html", context)
 
+
 def servicestwo(request):
     context = {"is_servicestwo": True}
     return render(request, "web/services-2.html", context)
+
 
 def servicesdetails(request):
     context = {"is_servicesdetails": True}
