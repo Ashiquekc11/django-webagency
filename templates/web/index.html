@@ -4,7 +4,7 @@
 
 {% block content %}
 {% include 'includes/header.html' %}
-{{sliders}}
+
     <!-- Start Banner
     ============================================= -->
     <div class="banner-area auto-height bg-gray version-center">
@@ -27,7 +27,9 @@
 
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                  {% for slider in sliders %}
+                  {{ forloop.first }}
+                    <div class="carousel-item {% if forloop.first %} active {% endif %}">
                         <div class="box-table">
                             <div class="box-cell">
                                 <div class="container">
@@ -40,8 +42,8 @@
                                             </div>
                                             <div class="col-lg-6 info">
                                                 <div class="content">
-                                                    <h4 data-animation="animated slideInLeft">We love to create</h4>
-                                                    <h2 data-animation="animated slideInRight">Creative & Digital <span>ideas</span></h2>
+                                                    <h4 data-animation="animated slideInLeft">{{ slider.sub_title }}</h4>
+                                                    <h2 data-animation="animated slideInRight">{{ slider.title }} <span>ideas</span></h2>
                                                     <a class="btn btn-theme effect btn-sm" href="#" data-animation="animated slideInUp">Get Started <i class="arrow_right"></i></a>
                                                 </div>
                                             </div>
@@ -51,7 +53,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
+          {% endfor %}
+                    <!-- <div class="carousel-item">
                         <div class="box-table">
                             <div class="box-cell">
                                 <div class="container">
@@ -74,7 +77,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+
                 </div>
                 <!-- End Wrapper for slides -->
             </div>
