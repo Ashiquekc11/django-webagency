@@ -8,8 +8,12 @@ from .models import Author, Contact, Blog, Project, Service, Slider, Testimonial
 
 def index(request):
     sliders = Slider.objects.all()
+    projects = Project.objects.all()
+    testimonials = Testimonial.objects.all()
+    print (testimonials)
     print (sliders)
-    context = {"is_index": True, "sliders": sliders, }
+    print (projects)
+    context = {"is_index": True, "sliders": sliders, "projects": projects, "testimonials": testimonials }
     return render(request, "web/index.html", context)
 
 

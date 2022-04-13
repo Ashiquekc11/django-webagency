@@ -28,7 +28,6 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                   {% for slider in sliders %}
-                  {{ forloop.first }}
                     <div class="carousel-item {% if forloop.first %} active {% endif %}">
                         <div class="box-table">
                             <div class="box-cell">
@@ -37,7 +36,7 @@
                                         <div class="row align-center">
                                             <div class="col-lg-6">
                                                 <div class="thumb">
-                                                    <img src="{% static 'web/img/1200x1350.png' %}" alt="Thumb">
+                                                    <img src="{{ slider.slider_img.url }}" alt="Thumb">
                                                 </div>
                                             </div>
                                             <div class="col-lg-6 info">
@@ -402,17 +401,20 @@
         <div class="container-full">
             <div class="projects-carousel owl-carousel owl-theme">
                 <!-- Single Item -->
+                {% for project in projects %}
                 <div class="item">
-                    <img src="{% static 'web/img/800x800.png' %}" alt="Thumb">
+                    <img src="{{ project.image.crop.800x800 }}" alt="Thumb">
                     <div class="overlay">
                         <div class="content">
-                            <span>Branding</span>
-                            <h5><a href="#">Character Concepts</a></h5>
+                            <span>{{ project.category }}</span>
+                            <h5><a href="#">{{ project.title }}</a></h5>
                         </div>
                     </div>
                 </div>
+                {% endfor %}
                 <!-- End Single Item -->
                 <!-- Single Item -->
+                {% comment %}
                 <div class="item">
                     <img src="{% static 'web/img/800x800.png' %}" alt="Thumb">
                     <div class="overlay">
@@ -444,6 +446,7 @@
                         </div>
                     </div>
                 </div>
+                {% endcomment %}
                 <!-- End Single Item -->
             </div>
         </div>
@@ -494,6 +497,21 @@
                             <h2>10,000+ Happy Customers</h2>
                         </div>
                         <div class="testimonials-carousel owl-carousel owl-theme">
+                        {% for testimonial in testimonials %}
+                            <div class="item">
+                                <p>
+                                    {{ testimonial.feedback }}
+                                </p>
+                                <div class="thumb-box">
+                                    <div class="thumb">
+                                        <img src="{{ testimonial.profile_photo.crop.100x100 }}" alt="Thumb">
+                                    </div>
+                                </div>
+                                <h5>{{ testimonial.name }}</h5>
+                                <span>{{ testimonial.designation }}</span>
+                            </div>
+                            {% endfor %}
+                            {% comment %}
                             <div class="item">
                                 <p>
                                     Ashamed no inhabit ferrars it ye besides resolve. Own judgment directly few trifling. Elderly as pursuit at regular do parlors. Rank what has into fond pursuit at regular.
@@ -518,18 +536,7 @@
                                 <h5>Jonath Dark</h5>
                                 <span>Senior Developer</span>
                             </div>
-                            <div class="item">
-                                <p>
-                                    Ashamed no inhabit ferrars it ye besides resolve. Own judgment directly few trifling. Elderly as pursuit at regular do parlors. Rank what has into fond pursuit at regular.
-                                </p>
-                                <div class="thumb-box">
-                                    <div class="thumb">
-                                        <img src="{% static 'web/img/100x100.png' %}" alt="Thumb">
-                                    </div>
-                                </div>
-                                <h5>Jonath Dark</h5>
-                                <span>Senior Developer</span>
-                            </div>
+                            {% endcomment %}
                         </div>
                     </div>
                 </div>

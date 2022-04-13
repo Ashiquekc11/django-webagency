@@ -40,6 +40,7 @@ class Author(models.Model):
 class Slider(models.Model):
 	title = models.CharField(max_length=128)
 	sub_title = models.CharField(max_length=128)
+	slider_img = VersatileImageField()
 	btn_link = models.URLField(max_length=200, blank=True)
 
 	def __str__(self):
@@ -58,14 +59,13 @@ class Project(models.Model):
 
 
 class Testimonial(models.Model):
-	title = models.CharField(max_length=128)
 	name = models.CharField(max_length=30)
 	profile_photo = VersatileImageField()
 	feedback = models.TextField()
 	designation = models.CharField(max_length=30)
 
 	def __str__(self):
-		return str(self.title)
+		return str(self.name)
 
 class Service(models.Model):
 
