@@ -48,20 +48,22 @@ def projectdetails(request):
 def servicestwo(request):
     services = Service.objects.all()
     testimonials = Testimonial.objects.all()
-    context = {"is_servicestwo": True, "services": services, "testimonials": testimonials}
+    context = {"is_servicestwo": True,
+               "services": services, "testimonials": testimonials}
     return render(request, "web/services-2.html", context)
 
 
 def servicesdetails(request, slug):
     service = Service.objects.get(slug=slug)
     services = Service.objects.all()
-    context = {"is_servicesdetails": True, "service":service, "services":services}
+    context = {"is_servicesdetails": True,
+               "service": service, "services": services}
     return render(request, "web/services-details.html", context)
 
 
 def blogwithsidebar(request):
     blogs = Blog.objects.all()
-    context = {"is_blogwithsidebar": True, "blogs": blogs,}
+    context = {"is_blogwithsidebar": True, "blogs": blogs, }
     return render(request, "web/blog-with-sidebar.html", context)
 
 
