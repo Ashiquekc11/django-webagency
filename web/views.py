@@ -36,12 +36,22 @@ def notfound(request):
 
 
 def projects(request):
-    context = {"is_projects": True}
+    projects = Project.objects.all()
+    context = {
+        "is_projects": True,
+        "projects": projects,
+    }
     return render(request, "web/projects.html", context)
 
 
-def projectdetails(request):
-    context = {"is_projectdetails": True}
+def projectdetails(request, slug):
+    projects = Project.objects.all()
+    project = Project.objects.get(slug=slug)
+    context = {
+    "is_projectdetails": True,
+    "projects": projects,
+    "project": project,
+    }
     return render(request, "web/project-details.html", context)
 
 

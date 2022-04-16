@@ -55,9 +55,13 @@ class Project(models.Model):
                         ('branding', 'Branding'), ('creative', 'Creative'), )
 
     title = models.CharField(max_length=128)
-    category = models.CharField(
-        max_length=128, choices=CATEGORY_CHOICES, default="creative")
+    category = models.CharField(max_length=128, choices=CATEGORY_CHOICES, default="creative")
     image = VersatileImageField()
+    slug = models.SlugField(unique=True)
+    details = models.TextField()
+
+    def get_absolute_url(self):
+        return reverse('web:project-details', kwargs={'slug': self.slug})
 
     def __str__(self):
         return str(self.title)

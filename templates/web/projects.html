@@ -5,7 +5,7 @@
 {% block content %}
 {% include 'includes/header-2.html' %}
 
-    <!-- Start Breadcrumb 
+    <!-- Start Breadcrumb
     ============================================= -->
     <div class="breadcrumb-area bg-gray text-center shadow dark text-light bg-cover" style="background-image: url({% static 'web/img/2440x1578.png' %});">
         <div class="container">
@@ -31,27 +31,28 @@
                     <div class="col-md-12 portfolio-content">
                         <div class="mix-item-menu text-center">
                             <button class="active" data-filter="*">All</button>
-                            <button data-filter=".development">Development</button>
-                            <button data-filter=".consulting">Consulting</button>
-                            <button data-filter=".finance">Finance</button>
-                            <button data-filter=".branding">Branding</button>
-                            <button data-filter=".capital">Capital</button>
+                            {% for project in projects %}
+                            <button data-filter=".{{project.get_category_display| slugify}}">{{ project.get_category_display }}</button>
+                            {% endfor %}
                         </div>
                         <!-- End Mixitup Nav-->
 
                         <div class="magnific-mix-gallery masonary">
                             <div id="portfolio-grid" class="portfolio-items colums-3">
                                 <!-- Single Item -->
-                                <div class="pf-item development capital">
+                                {% for project in projects %}
+                                <div class="pf-item  {{project.get_category_display| slugify}}">
                                     <div class="overlay">
-                                        <img src="{% static 'web/img/800x600.png' %}" alt="thumb">
-                                        <a href="{% static 'web/img/800x600.png' %}" class="item popup-link"><i class="fa fa-plus"></i></a>
+                                        <img src="{{ project.image.crop.800x600 }}" alt="thumb">
+                                        <a href="{{ project.image.crop.800x600 }}" class="item popup-link"><i class="fa fa-plus"></i></a>
                                         <div class="content">
-                                            <span>Finance</span>
-                                            <h5><a href="#">Startup Funding</a></h5>
+                                            <span>{{project.category}}</span>
+                                            <h5><a href="{% url 'web:project-details' project.slug %}">{{project.title}}</a></h5>
                                         </div>
                                     </div>
                                 </div>
+                                {% endfor %}
+                                {% comment %}
                                 <!-- End Single Item -->
                                 <!-- Single Item -->
                                 <div class="pf-item consulting branding">
@@ -112,6 +113,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                {% endcomment %}
                                 <!-- Single Item -->
                             </div>
                         </div>
