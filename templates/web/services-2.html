@@ -28,16 +28,19 @@
         <div class="container-full">
             <div class="services-content-box services-stage-carousel owl-carousel owl-theme">
                 <!-- Signle item -->
+                {% for service in services %}
                 <div class="item">
                     <div class="icon">
-                        <i class="flaticon-advertising"></i>
+                    <i class="flaticon-technical-support"></i>
                     </div>
-                    <h4>Social Media marketing</h4>
+                    <h4>{{ service.title }}</h4>
                     <p>
-                        Suspected he remainder rapturous my sweetness. All vanity regard sudden nor simple can. World mrs and vexed china since after often. 
+                        {{ service.description }}
                     </p>
-                    <a href="#">Read More <i class="arrow_right"></i></a>
+                    <a href="{% url 'web:services-details' pk=service.pk %}">Read More <i class="arrow_right"></i></a>
                 </div>
+                {% endfor %}
+                {% comment %}
                 <!-- End Signle item -->
                 <!-- Signle item -->
                 <div class="item">
@@ -75,6 +78,7 @@
                     <a href="#">Read More <i class="arrow_right"></i></a>
                 </div>
                 <!-- End Signle item -->
+                {% endcomment %}
             </div>
         </div>
     </div>
@@ -289,6 +293,21 @@
                             <h2>10,000+ Happy Customers</h2>
                         </div>
                         <div class="testimonials-carousel owl-carousel owl-theme">
+                        {% for testimonial in testimonials %}
+                        <div class="item">
+                          <p>
+                            {{ testimonial.feedback }}
+                          </p>
+                          <div class="thumb-box">
+                            <div class="thumb">
+                              <img src="{{ testimonial.profile_photo.crop.100x100 }}" alt="Thumb">
+                            </div>
+                          </div>
+                          <h5>{{ testimonial.name }}</h5>
+                          <span>{{ testimonial.designation }}</span>
+                        </div>
+                        {% endfor %}
+                            {% comment %}
                             <div class="item">
                                 <p>
                                     Ashamed no inhabit ferrars it ye besides resolve. Own judgment directly few trifling. Elderly as pursuit at regular do parlors. Rank what has into fond pursuit at regular. 
@@ -313,18 +332,7 @@
                                 <h5>Jonath Dark</h5>
                                 <span>Senior Developer</span>
                             </div>
-                            <div class="item">
-                                <p>
-                                    Ashamed no inhabit ferrars it ye besides resolve. Own judgment directly few trifling. Elderly as pursuit at regular do parlors. Rank what has into fond pursuit at regular. 
-                                </p>
-                                <div class="thumb-box">
-                                    <div class="thumb">
-                                        <img src="{% static 'web/img/100x100.png' %}" alt="Thumb">
-                                    </div>
-                                </div>
-                                <h5>Jonath Dark</h5>
-                                <span>Senior Developer</span>
-                            </div>
+                            {% endcomment %}
                         </div>
                     </div>
                 </div>

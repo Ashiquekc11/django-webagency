@@ -10,10 +10,8 @@ def index(request):
     sliders = Slider.objects.all()
     projects = Project.objects.all()
     testimonials = Testimonial.objects.all()
-    print (testimonials)
-    print (sliders)
-    print (projects)
-    context = {"is_index": True, "sliders": sliders, "projects": projects, "testimonials": testimonials }
+    context = {"is_index": True, "sliders": sliders,
+               "projects": projects, "testimonials": testimonials}
     return render(request, "web/index.html", context)
 
 
@@ -48,20 +46,26 @@ def projectdetails(request):
 
 
 def servicestwo(request):
-    context = {"is_servicestwo": True}
+    services = Service.objects.all()
+    testimonials = Testimonial.objects.all()
+    context = {"is_servicestwo": True, "services": services, "testimonials": testimonials}
     return render(request, "web/services-2.html", context)
 
 
-def servicesdetails(request):
-    context = {"is_servicesdetails": True}
+def servicesdetails(request, pk):
+    service = Service.objects.get(pk=pk)
+    services = Service.objects.all()
+    context = {"is_servicesdetails": True, "service":service, "services":services}
     return render(request, "web/services-details.html", context)
 
 
 def blogwithsidebar(request):
-    context = {"is_blogwithsidebar": True}
+    blogs = Blog.objects.all()
+    context = {"is_blogwithsidebar": True, "blogs": blogs,}
     return render(request, "web/blog-with-sidebar.html", context)
 
 
-def blogsinglewithsidebar(request):
-    context = {"is_blogsinglewithsidebar": True}
+def blogsinglewithsidebar(request, pk):
+    blog = Blog.objects.get(pk=pk)
+    context = {"is_blogsinglewithsidebar": True, "blog": blog}
     return render(request, "web/blog-single-with-sidebar.html", context)

@@ -12,7 +12,7 @@ urlpatterns = [
     path("projects/", views.projects, name="projects"),
     path("project-details/", views.projectdetails, name="project-details"),
     path("services-two/", views.servicestwo, name="services-2"),
-    path("services-details/", views.servicesdetails, name="services-details"),
+    path("services-details/<str:pk>/", views.servicesdetails, name="services-details"),
     path("blog-with-sidebar/", views.blogwithsidebar, name="blog-with-sidebar"),
-    path("blog-single-with-sidebar/", views.blogsinglewithsidebar, name="blog-single-with-sidebar"),
+    path("blog-single-with-sidebar/<str:pk>/", views.blogsinglewithsidebar, name="blog-single-with-sidebar"),
 ]

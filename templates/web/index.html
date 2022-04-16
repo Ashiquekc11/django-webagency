@@ -5,55 +5,55 @@
 {% block content %}
 {% include 'includes/header.html' %}
 
-    <!-- Start Banner
+<!-- Start Banner
     ============================================= -->
-    <div class="banner-area auto-height bg-gray version-center">
-        <div class="banner-box">
-            <div id="bootcarousel" class="carousel slide animate_text" data-ride="carousel">
+<div class="banner-area auto-height bg-gray version-center">
+  <div class="banner-box">
+    <div id="bootcarousel" class="carousel slide animate_text" data-ride="carousel">
 
-                <!-- Indicators for slides -->
-                <div class="carousel-indicator">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <ol class="carousel-indicators">
-                                    <li data-target="#bootcarousel" data-slide-to="0" class="active">01</li>
-                                    <li data-target="#bootcarousel" data-slide-to="1">02</li>
-                                </ol>
-                            </div>
-                        </div>
+      <!-- Indicators for slides -->
+      <div class="carousel-indicator">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <ol class="carousel-indicators">
+                <li data-target="#bootcarousel" data-slide-to="0" class="active">01</li>
+                <li data-target="#bootcarousel" data-slide-to="1">02</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        {% for slider in sliders %}
+        <div class="carousel-item {% if forloop.first %} active {% endif %}">
+          <div class="box-table">
+            <div class="box-cell">
+              <div class="container">
+                <div class="banner-content">
+                  <div class="row align-center">
+                    <div class="col-lg-6">
+                      <div class="thumb">
+                        <img src="{{ slider.slider_img.url }}" alt="Thumb">
+                      </div>
                     </div>
+                    <div class="col-lg-6 info">
+                      <div class="content">
+                        <h4 data-animation="animated slideInLeft">{{ slider.sub_title }}</h4>
+                        <h2 data-animation="animated slideInRight">{{ slider.title }} <span>ideas</span></h2>
+                        <a class="btn btn-theme effect btn-sm" href="#" data-animation="animated slideInUp">Get Started <i class="arrow_right"></i></a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                  {% for slider in sliders %}
-                    <div class="carousel-item {% if forloop.first %} active {% endif %}">
-                        <div class="box-table">
-                            <div class="box-cell">
-                                <div class="container">
-                                    <div class="banner-content">
-                                        <div class="row align-center">
-                                            <div class="col-lg-6">
-                                                <div class="thumb">
-                                                    <img src="{{ slider.slider_img.url }}" alt="Thumb">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 info">
-                                                <div class="content">
-                                                    <h4 data-animation="animated slideInLeft">{{ slider.sub_title }}</h4>
-                                                    <h2 data-animation="animated slideInRight">{{ slider.title }} <span>ideas</span></h2>
-                                                    <a class="btn btn-theme effect btn-sm" href="#" data-animation="animated slideInUp">Get Started <i class="arrow_right"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-          {% endfor %}
-                    <!-- <div class="carousel-item">
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+        <!-- <div class="carousel-item">
                         <div class="box-table">
                             <div class="box-cell">
                                 <div class="container">
@@ -78,576 +78,584 @@
                         </div>
                     </div> -->
 
-                </div>
-                <!-- End Wrapper for slides -->
-            </div>
-        </div>
+      </div>
+      <!-- End Wrapper for slides -->
     </div>
-    <!-- End Banner -->
+  </div>
+</div>
+<!-- End Banner -->
 
-    <!-- Start Our Features
+<!-- Start Our Features
     ============================================= -->
-    <div class="features-area bottom-shape-light default-padding bg-gray bottom-less">
-        <div class="container">
+<div class="features-area bottom-shape-light default-padding bg-gray bottom-less">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 offset-lg-3">
+        <div class="heading-center text-center">
+          <h5>Our Features</h5>
+          <h2>Behind The Story Of Creative Digital Agency</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="features-items text-center">
+      <div class="row">
+        <!-- Single Item -->
+        <div class="col-lg-4 col-md-6 single-item">
+          <div class="item">
+            <h4>Design</h4>
+            <i class="flaticon-creativity"></i>
+            <p>
+              Particular boisterous uncommonly are. Early wrong as so manor match.
+              Him necessary shameless discovery consulted one but.
+            </p>
+            <a href="#"><i class="arrow_right"></i> Learn More</a>
+          </div>
+        </div>
+        <!-- End Single Item -->
+        <!-- Single Item -->
+        <div class="col-lg-4 col-md-6 single-item">
+          <div class="item">
+            <h4>Development</h4>
+            <i class="flaticon-secure"></i>
+            <p>
+              Particular boisterous uncommonly are. Early wrong as so manor match. Him necessary shameless discovery consulted one but.
+            </p>
+            <a href="#"><i class="arrow_right"></i> Learn More</a>
+          </div>
+        </div>
+        <!-- End Single Item -->
+        <!-- Single Item -->
+        <div class="col-lg-4 col-md-6 single-item">
+          <div class="item">
+            <h4>Implement</h4>
+            <i class="flaticon-sugar-cubes"></i>
+            <p>
+              Particular boisterous uncommonly are. Early wrong as so manor match.
+              Him necessary shameless discovery consulted one but.
+            </p>
+            <a href="#"><i class="arrow_right"></i> Learn More</a>
+          </div>
+        </div>
+        <!-- End Single Item -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Our Features -->
+
+<!-- Start About
+    ============================================= -->
+<div class="about-area overflow-hidden default-padding">
+  <div class="container">
+    <div class="about-items">
+      <div class="row align-center">
+
+        <!-- Thumb -->
+        <div class="col-lg-6">
+          <div class="thumb">
+            <img src="{% static 'web/img/800x800.png' %}" alt="Thumb">
+          </div>
+        </div>
+        <!-- End Thumb -->
+
+        <div class="col-lg-6">
+          <div class="content">
+            <h4>About Us</h4>
+            <h2>We create & design award winning Digital products</h2>
+            <p>
+              Talking justice welcome message inquiry in started of am me. Led own hearted highest
+              visited lasting sir through compass his. Guest tiled he quick by so these trees am.
+            </p>
+            <div class="content-inner">
+              <a href="https://www.youtube.com/watch?v=owhuBrGIOsE" class="popup-youtube theme video-play-button item-center">
+                <i class="fa fa-play"></i>
+              </a>
+              <div class="row align-center">
+                <div class="col-lg-6">
+                  <ul>
+                    <li>Fresh ideas</li>
+                    <li>Unique designs</li>
+                    <li>Skilled trades</li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <h2>25 <span>Years of experience</span></h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End About -->
+
+<!-- Star Achivement
+    ============================================= -->
+<div class="achivement-area default-padding-bottom">
+  <!-- Fixed BG -->
+  <div class="fixed-bg">
+    <img src="{% static 'web/img/border-bg.jpg' %}" alt="Shape">
+  </div>
+  <!-- Fixed BG -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 heading-side">
+        <h5>Experts in field</h5>
+        <h2>Unique Solutions for Your Business </h2>
+        <p>
+          Gravity letters it amongst herself dearest an windows by.
+          Wooded ladies she basket season age her uneasy saw.
+          Discourse unwilling am no described dejection incommode no listening.
+        </p>
+      </div>
+      <div class="col-lg-6 right-content">
+        <div class="skill-items">
+          <!-- Progress Bar Start -->
+          <div class="progress-box">
+            <h5>Marketing</h5>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" data-width="88">
+                <span>88%</span>
+              </div>
+            </div>
+          </div>
+          <div class="progress-box">
+            <h5>Social Assistant</h5>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" data-width="95">
+                <span>95%</span>
+              </div>
+            </div>
+          </div>
+          <div class="progress-box">
+            <h5>Consulting</h5>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" data-width="70">
+                <span>70%</span>
+              </div>
+            </div>
+          </div>
+          <!-- End Progressbar -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- End Achivement Area -->
+
+<!-- Start Why Choose Us Area
+    ============================================= -->
+<div class="why-choose-us-area default-padding-bottom bg-cover text-light" style="background-image: url({% static 'web/img/2440x1578.png' %});">
+  <div class="container">
+    <div class="inner-items">
+      <div class="row">
+        <div class="col-lg-7 offset-lg-5">
+          <div class="info">
+            <h2>We Create digital products That Make people’s Lives More Easier.</h2>
+            <p>
+              Common indeed garden you his ladies out yet. Preference imprudence contrasted to remarkably in on. Taken now you him trees tears any. Her object giving end sister except oppose. Whatever throwing we on resolved entrance together
+              graceful. Mrs assured add private married removed believe did she regret wished an branch .
+            </p>
+            <ul>
+              <li>
+                <h5>Innovative business</h5>
+                <p>
+                  Easy to customize
+                </p>
+              </li>
+              <li>
+                <h5>Expertly marketing</h5>
+                <p>
+                  High quality services
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Why Choose Us Area -->
+
+<!-- Star Services
+    ============================================= -->
+<div class="services-area default-padding">
+  <div class="container">
+    <div class="services-box">
+      <div class="row align-center">
+
+        <div class="col-lg-5">
+          <div class="heading-side">
+            <!-- Shape Fixed Rotation -->
+            <div class="shape-fixed animation-rotation">
+              <img src="{% static 'web/img/round-shappe.png' %}" alt="Thumb">
+            </div>
+            <!-- Shape Fixed Rotation -->
+            <h5>What we do</h5>
+            <h2>Does more then ever platform to achieve goal stages.</h2>
+            <p>
+              Wooded ladies she basket season age her uneasy saw. Discourse unwilling am no described dejection.
+            </p>
+            <a class="btn-animation border dark" href="#" data-animation="animated slideInUp">Get Started <i class="arrow_right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="services-items">
             <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="heading-center text-center">
-                        <h5>Our Features</h5>
-                        <h2>Behind The Story Of Creative Digital Agency</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="features-items text-center">
-                <div class="row">
-                    <!-- Single Item -->
-                    <div class="col-lg-4 col-md-6 single-item">
-                        <div class="item">
-                            <h4>Design</h4>
-                            <i class="flaticon-creativity"></i>
-                            <p>
-                                Particular boisterous uncommonly are. Early wrong as so manor match.
-                                Him necessary shameless discovery consulted one but.
-                            </p>
-                            <a href="#"><i class="arrow_right"></i> Learn More</a>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-lg-4 col-md-6 single-item">
-                        <div class="item">
-                            <h4>Development</h4>
-                            <i class="flaticon-secure"></i>
-                            <p>
-                                Particular boisterous uncommonly are. Early wrong as so manor match. Him necessary shameless discovery consulted one but.
-                            </p>
-                            <a href="#"><i class="arrow_right"></i> Learn More</a>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-lg-4 col-md-6 single-item">
-                        <div class="item">
-                            <h4>Implement</h4>
-                            <i class="flaticon-sugar-cubes"></i>
-                            <p>
-                                Particular boisterous uncommonly are. Early wrong as so manor match.
-                                Him necessary shameless discovery consulted one but.
-                            </p>
-                            <a href="#"><i class="arrow_right"></i> Learn More</a>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Our Features -->
-
-    <!-- Start About
-    ============================================= -->
-    <div class="about-area overflow-hidden default-padding">
-        <div class="container">
-            <div class="about-items">
-                <div class="row align-center">
-
-                    <!-- Thumb -->
-                    <div class="col-lg-6">
-                        <div class="thumb">
-                            <img src="{% static 'web/img/800x800.png' %}" alt="Thumb">
-                        </div>
-                    </div>
-                    <!-- End Thumb -->
-
-                    <div class="col-lg-6">
-                        <div class="content">
-                            <h4>About Us</h4>
-                            <h2>We create & design award winning Digital products</h2>
-                            <p>
-                                Talking justice welcome message inquiry in started of am me. Led own hearted highest
-                                visited lasting sir through compass his. Guest tiled he quick by so these trees am.
-                            </p>
-                            <div class="content-inner">
-                                <a href="https://www.youtube.com/watch?v=owhuBrGIOsE" class="popup-youtube theme video-play-button item-center">
-                                    <i class="fa fa-play"></i>
-                                </a>
-                                <div class="row align-center">
-                                    <div class="col-lg-6">
-                                        <ul>
-                                            <li>Fresh ideas</li>
-                                            <li>Unique designs</li>
-                                            <li>Skilled trades</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <h2>25 <span>Years of experience</span></h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End About -->
-
-    <!-- Star Achivement
-    ============================================= -->
-    <div class="achivement-area default-padding-bottom">
-        <!-- Fixed BG -->
-        <div class="fixed-bg">
-            <img src="{% static 'web/img/border-bg.jpg' %}" alt="Shape">
-        </div>
-        <!-- Fixed BG -->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 heading-side">
-                    <h5>Experts in field</h5>
-                    <h2>Unique Solutions for Your Business </h2>
-                    <p>
-                        Gravity letters it amongst herself dearest an windows by.
-                         Wooded ladies she basket season age her uneasy saw.
-                         Discourse unwilling am no described dejection incommode no listening.
-                    </p>
-                </div>
-                <div class="col-lg-6 right-content">
-                    <div class="skill-items">
-                        <!-- Progress Bar Start -->
-                        <div class="progress-box">
-                            <h5>Marketing</h5>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-width="88">
-                                    <span>88%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="progress-box">
-                            <h5>Social Assistant</h5>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-width="95">
-                                    <span>95%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="progress-box">
-                            <h5>Consulting</h5>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-width="70">
-                                    <span>70%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Progressbar -->
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- End Achivement Area -->
-
-    <!-- Start Why Choose Us Area
-    ============================================= -->
-    <div class="why-choose-us-area default-padding-bottom bg-cover text-light" style="background-image: url({% static 'web/img/2440x1578.png' %});">
-        <div class="container">
-            <div class="inner-items">
-                <div class="row">
-                    <div class="col-lg-7 offset-lg-5">
-                        <div class="info">
-                            <h2>We Create digital products That Make people’s Lives More Easier.</h2>
-                            <p>
-                                Common indeed garden you his ladies out yet. Preference imprudence contrasted to remarkably in on. Taken now you him trees tears any. Her object giving end sister except oppose. Whatever throwing we on resolved entrance together graceful. Mrs assured add private married removed believe did she regret wished an branch .
-                            </p>
-                            <ul>
-                                <li>
-                                    <h5>Innovative business</h5>
-                                    <p>
-                                        Easy to customize
-                                    </p>
-                                </li>
-                                <li>
-                                    <h5>Expertly marketing</h5>
-                                    <p>
-                                        High quality services
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Why Choose Us Area -->
-
-    <!-- Star Services
-    ============================================= -->
-    <div class="services-area default-padding">
-        <div class="container">
-            <div class="services-box">
-                <div class="row align-center">
-
-                    <div class="col-lg-5">
-                        <div class="heading-side">
-                            <!-- Shape Fixed Rotation -->
-                            <div class="shape-fixed animation-rotation">
-                                <img src="{% static 'web/img/round-shappe.png' %}" alt="Thumb">
-                            </div>
-                            <!-- Shape Fixed Rotation -->
-                            <h5>What we do</h5>
-                            <h2>Does more then ever platform to achieve goal stages.</h2>
-                            <p>
-                                Wooded ladies she basket season age her uneasy saw. Discourse unwilling am no described dejection.
-                            </p>
-                            <a class="btn-animation border dark" href="#"  data-animation="animated slideInUp">Get Started <i class="arrow_right"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-7">
-                        <div class="services-items">
-                            <div class="row">
-                                <div class="item-grid col-lg-6 col-md-6">
-                                    <!-- Single Item -->
-                                    <div class="single-item">
-                                        <div class="item">
-                                            <div class="icon">
-                                                <i class="flaticon-files-and-folders"></i>
-                                            </div>
-                                            <div class="info">
-                                                <h5><a href="#">Data Tracking</a></h5>
-                                                <p>
-                                                    Abode words began enjoy years no do ﻿no. Tried spoil as heart visit.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Single Item -->
-                                    <!-- Single Item -->
-                                    <div class="single-item">
-                                        <div class="item">
-                                            <div class="icon">
-                                                <i class="flaticon-rocket"></i>
-                                            </div>
-                                            <div class="info">
-                                                <h5><a href="#">Press Releases</a></h5>
-                                                <p>
-                                                    Abode words began enjoy years no do ﻿no. Tried spoil as heart visit.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Single Item -->
-                                </div>
-
-                                <div class="item-grid col-lg-6 col-md-6">
-                                    <!-- Single Item -->
-                                    <div class="single-item">
-                                        <div class="item">
-                                            <div class="icon">
-                                                <i class="flaticon-target"></i>
-                                            </div>
-                                            <div class="info">
-                                                <h5><a href="#">Branding</a></h5>
-                                                <p>
-                                                    Abode words began enjoy years no do ﻿no. Tried spoil as heart visit.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Single Item -->
-                                    <!-- Single Item -->
-                                    <div class="single-item">
-                                        <div class="item">
-                                            <div class="icon">
-                                                <i class="flaticon-advertising"></i>
-                                            </div>
-                                            <div class="info">
-                                                <h5><a href="#">Marketing</a></h5>
-                                                <p>
-                                                    Abode words began enjoy years no do ﻿no. Tried spoil as heart visit.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Single Item -->
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Services -->
-
-    <!-- Start Projects Area
-    ============================================= -->
-    <div class="projects-area bg-gray title-bottom default-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="heading-center text-center">
-                        <h5>Featured Works</h5>
-                        <h2>Our Recent & popular awesome completed projects</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-full">
-            <div class="projects-carousel owl-carousel owl-theme">
+              <div class="item-grid col-lg-6 col-md-6">
                 <!-- Single Item -->
-                {% for project in projects %}
-                <div class="item">
-                    <img src="{{ project.image.crop.800x800 }}" alt="Thumb">
-                    <div class="overlay">
-                        <div class="content">
-                            <span>{{ project.category }}</span>
-                            <h5><a href="#">{{ project.title }}</a></h5>
-                        </div>
+                <div class="single-item">
+                  <div class="item">
+                    <div class="icon">
+                      <i class="flaticon-files-and-folders"></i>
                     </div>
-                </div>
-                {% endfor %}
-                <!-- End Single Item -->
-                <!-- Single Item -->
-                {% comment %}
-                <div class="item">
-                    <img src="{% static 'web/img/800x800.png' %}" alt="Thumb">
-                    <div class="overlay">
-                        <div class="content">
-                            <span>Creative</span>
-                            <h5><a href="#">Unicorn Project</a></h5>
-                        </div>
+                    <div class="info">
+                      <h5><a href="#">Data Tracking</a></h5>
+                      <p>
+                        Abode words began enjoy years no do ﻿no. Tried spoil as heart visit.
+                      </p>
                     </div>
+                  </div>
                 </div>
                 <!-- End Single Item -->
                 <!-- Single Item -->
-                <div class="item">
-                    <img src="{% static 'web/img/800x800.png' %}" alt="Thumb">
-                    <div class="overlay">
-                        <div class="content">
-                            <span>Branding</span>
-                            <h5><a href="#">Character Concepts</a></h5>
-                        </div>
+                <div class="single-item">
+                  <div class="item">
+                    <div class="icon">
+                      <i class="flaticon-rocket"></i>
                     </div>
+                    <div class="info">
+                      <h5><a href="#">Press Releases</a></h5>
+                      <p>
+                        Abode words began enjoy years no do ﻿no. Tried spoil as heart visit.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Single Item -->
+              </div>
+
+              <div class="item-grid col-lg-6 col-md-6">
+                <!-- Single Item -->
+                <div class="single-item">
+                  <div class="item">
+                    <div class="icon">
+                      <i class="flaticon-target"></i>
+                    </div>
+                    <div class="info">
+                      <h5><a href="#">Branding</a></h5>
+                      <p>
+                        Abode words began enjoy years no do ﻿no. Tried spoil as heart visit.
+                      </p>
+                    </div>
+                  </div>
                 </div>
                 <!-- End Single Item -->
                 <!-- Single Item -->
-                <div class="item">
-                    <img src="{% static 'web/img/800x800.png' %}" alt="Thumb">
-                    <div class="overlay">
-                        <div class="content">
-                            <span>Creative</span>
-                            <h5><a href="#">Unicorn Project</a></h5>
-                        </div>
+                <div class="single-item">
+                  <div class="item">
+                    <div class="icon">
+                      <i class="flaticon-advertising"></i>
                     </div>
+                    <div class="info">
+                      <h5><a href="#">Marketing</a></h5>
+                      <p>
+                        Abode words began enjoy years no do ﻿no. Tried spoil as heart visit.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                {% endcomment %}
                 <!-- End Single Item -->
-            </div>
-        </div>
-    </div>
-    <!-- End Projects Area -->
+              </div>
 
-    <!-- Star Brand Area
-    ============================================= -->
-    <div class="brand-area text-light">
-        <div class="container">
-            <div class="brand-items">
-                <div class="row align-center">
-                    <div class="col-lg-6 info">
-                        <h2>Since 1964 we worked for 10,000+ worldwide clients</h2>
-                        <p>
-                            Expenses as material breeding insisted building to in. Continual so distrusts
-                            pronounce by unwilling listening. Thing do taste on we manor. Him had wound use found hoped.
-                        </p>
-                        <a href="#" class="btn-animation light border">See All Brand<i class="arrow_right"></i></a>
-                    </div>
-                    <div class="col-lg-6 brand">
-                        <div class="row">
-                            <div class="col-lg-4"><img src="{% static 'web/img/150x80.png' %}" alt="Brand"></div>
-                            <div class="col-lg-4"><img src="{% static 'web/img/150x80.png' %}" alt="Brand"></div>
-                            <div class="col-lg-4"><img src="{% static 'web/img/150x80.png' %}" alt="Brand"></div>
-                            <div class="col-lg-4"><img src="{% static 'web/img/150x80.png' %}" alt="Brand"></div>
-                            <div class="col-lg-4"><img src="{% static 'web/img/150x80.png' %}" alt="Brand"></div>
-                            <div class="col-lg-4"><img src="{% static 'web/img/150x80.png' %}" alt="Brand"></div>
-                        </div>
-                    </div>
-                </div>
             </div>
+          </div>
         </div>
-    </div>
-    <!-- End Brand Area -->
 
-    <!-- Star Testimonials
-    ============================================= -->
-    <div class="testimonials-area default-padding">
-        <!-- Fixed Shape -->
-        <div class="fixed-shape" style="background-image: url({% static 'web/img/map.svg)' %};"></div>
-        <!-- End Fixed Shape -->
-        <div class="container">
-            <div class="testimonial-items text-center">
-                <div class="row">
-                    <div class="col-lg-8 offset-lg-2">
-                        <div class="heading">
-                            <h2>10,000+ Happy Customers</h2>
-                        </div>
-                        <div class="testimonials-carousel owl-carousel owl-theme">
-                        {% for testimonial in testimonials %}
-                            <div class="item">
-                                <p>
-                                    {{ testimonial.feedback }}
-                                </p>
-                                <div class="thumb-box">
-                                    <div class="thumb">
-                                        <img src="{{ testimonial.profile_photo.crop.100x100 }}" alt="Thumb">
-                                    </div>
-                                </div>
-                                <h5>{{ testimonial.name }}</h5>
-                                <span>{{ testimonial.designation }}</span>
-                            </div>
-                            {% endfor %}
-                            {% comment %}
-                            <div class="item">
-                                <p>
-                                    Ashamed no inhabit ferrars it ye besides resolve. Own judgment directly few trifling. Elderly as pursuit at regular do parlors. Rank what has into fond pursuit at regular.
-                                </p>
-                                <div class="thumb-box">
-                                    <div class="thumb">
-                                        <img src="{% static 'web/img/100x100.png' %}" alt="Thumb">
-                                    </div>
-                                </div>
-                                <h5>Jonath Dark</h5>
-                                <span>Senior Developer</span>
-                            </div>
-                            <div class="item">
-                                <p>
-                                    Ashamed no inhabit ferrars it ye besides resolve. Own judgment directly few trifling. Elderly as pursuit at regular do parlors. Rank what has into fond pursuit at regular.
-                                </p>
-                                <div class="thumb-box">
-                                    <div class="thumb">
-                                        <img src="{% static 'web/img/100x100.png' %}" alt="Thumb">
-                                    </div>
-                                </div>
-                                <h5>Jonath Dark</h5>
-                                <span>Senior Developer</span>
-                            </div>
-                            {% endcomment %}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-    <!-- End Testimonials -->
+  </div>
+</div>
+<!-- End Services -->
 
-    <!-- Star Blog
+<!-- Start Projects Area
     ============================================= -->
-    <div class="blog-area bg-gray blog-standard default-padding bottom-less">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="heading-center text-center">
-                        <h5>Latest News</h5>
-                        <h2>Most Popular Breaking News & Top Stories</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="blog-items">
-                <div class="row">
-                    <!-- Single Item -->
-                    <div class="col-lg-4 col-md-6 single-item">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="{% static 'web/img/800x900.png' %}" alt="Thumb">
-                                <div class="date">15 Jul, 2021</div>
-                                <div class="overlay">
-                                    <div class="content">
-                                        <h4>
-                                            <a href="#">The for fully had she there leave merit enjoy forth.</a>
-                                        </h4>
-                                    </div>
-                                    <div class="footer-meta">
-                                       <ul>
-                                           <li>
-                                               <img src="{% static 'web/img/100x100.png' %}" alt="Author">
-                                               <span>By </span>
-                                               <a href="#">John Baus</a>
-                                           </li>
-                                           <li>
-                                               <span>In </span>
-                                               <a href="#">Creative</a>
-                                           </li>
-                                       </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-lg-4 col-md-6 single-item thumb-less">
-                        <div class="item">
-                            <div class="date">18 Aug, 2021</div>
-                            <h4>
-                                <a href="#">Impossible admiration in particular conviction up.</a>
-                            </h4>
-                            <p>
-                                Coming merits and was talent enough far. Sir joy northward sportsmen education. Discovery incommode earnestly no he commanded if. Put still any about manor. Estimable me disposing of be moonlight cordially curiosity.
-                            </p>
-                            <div class="footer-meta">
-                               <ul>
-                                   <li>
-                                       <img src="{% static 'web/img/100x100.png' %}" alt="Author">
-                                       <span>By </span>
-                                       <a href="#">John Baus</a>
-                                   </li>
-                                   <li>
-                                       <span>In </span>
-                                       <a href="#">Agency</a>
-                                   </li>
-                               </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-lg-4 col-md-6 single-item">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="{% static 'web/img/800x900.png' %}" alt="Thumb">
-                                <div class="date">27 Nov, 2021</div>
-                                <div class="overlay">
-                                    <div class="content">
-                                        <h4>
-                                            <a href="#">Throwing sociable children to achiving point.</a>
-                                        </h4>
-                                    </div>
-                                    <div class="footer-meta">
-                                       <ul>
-                                           <li>
-                                               <img src="{% static 'web/img/100x100.png' %}" alt="Author">
-                                               <span>By </span>
-                                               <a href="#">John Baus</a>
-                                           </li>
-                                           <li>
-                                               <span>In </span>
-                                               <a href="#">Creative</a>
-                                           </li>
-                                       </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                </div>
-            </div>
+<div class="projects-area bg-gray title-bottom default-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 offset-lg-3">
+        <div class="heading-center text-center">
+          <h5>Featured Works</h5>
+          <h2>Our Recent & popular awesome completed projects</h2>
         </div>
+      </div>
     </div>
-    <!-- End Blog -->
-    {% endblock %}
+  </div>
+  <div class="container-full">
+    <div class="projects-carousel owl-carousel owl-theme">
+      <!-- Single Item -->
+      {% for project in projects %}
+      <div class="item">
+        <img src="{{ project.image.crop.800x800 }}" alt="Thumb">
+        <div class="overlay">
+          <div class="content">
+            <span>{{ project.category }}</span>
+            <h5><a href="#">{{ project.title }}</a></h5>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+      <!-- End Single Item -->
+      <!-- Single Item -->
+      {% comment %}
+      <div class="item">
+        <img src="{% static 'web/img/800x800.png' %}" alt="Thumb">
+        <div class="overlay">
+          <div class="content">
+            <span>Creative</span>
+            <h5><a href="#">Unicorn Project</a></h5>
+          </div>
+        </div>
+      </div>
+      <!-- End Single Item -->
+      <!-- Single Item -->
+      <div class="item">
+        <img src="{% static 'web/img/800x800.png' %}" alt="Thumb">
+        <div class="overlay">
+          <div class="content">
+            <span>Branding</span>
+            <h5><a href="#">Character Concepts</a></h5>
+          </div>
+        </div>
+      </div>
+      <!-- End Single Item -->
+      <!-- Single Item -->
+      <div class="item">
+        <img src="{% static 'web/img/800x800.png' %}" alt="Thumb">
+        <div class="overlay">
+          <div class="content">
+            <span>Creative</span>
+            <h5><a href="#">Unicorn Project</a></h5>
+          </div>
+        </div>
+      </div>
+      {% endcomment %}
+      <!-- End Single Item -->
+    </div>
+  </div>
+</div>
+<!-- End Projects Area -->
+
+<!-- Star Brand Area
+    ============================================= -->
+<div class="brand-area text-light">
+  <div class="container">
+    <div class="brand-items">
+      <div class="row align-center">
+        <div class="col-lg-6 info">
+          <h2>Since 1964 we worked for 10,000+ worldwide clients</h2>
+          <p>
+            Expenses as material breeding insisted building to in. Continual so distrusts
+            pronounce by unwilling listening. Thing do taste on we manor. Him had wound use found hoped.
+          </p>
+          <a href="#" class="btn-animation light border">See All Brand<i class="arrow_right"></i></a>
+        </div>
+        <div class="col-lg-6 brand">
+          <div class="row">
+            <div class="col-lg-4"><img src="{% static 'web/img/150x80.png' %}" alt="Brand"></div>
+            <div class="col-lg-4"><img src="{% static 'web/img/150x80.png' %}" alt="Brand"></div>
+            <div class="col-lg-4"><img src="{% static 'web/img/150x80.png' %}" alt="Brand"></div>
+            <div class="col-lg-4"><img src="{% static 'web/img/150x80.png' %}" alt="Brand"></div>
+            <div class="col-lg-4"><img src="{% static 'web/img/150x80.png' %}" alt="Brand"></div>
+            <div class="col-lg-4"><img src="{% static 'web/img/150x80.png' %}" alt="Brand"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Brand Area -->
+
+<!-- Star Testimonials
+    ============================================= -->
+<div class="testimonials-area default-padding">
+  <!-- Fixed Shape -->
+  <div class="fixed-shape" style="background-image: url({% static 'web/img/map.svg)' %};"></div>
+  <!-- End Fixed Shape -->
+  <div class="container">
+    <div class="testimonial-items text-center">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="heading">
+            <h2>10,000+ Happy Customers</h2>
+          </div>
+          <div class="testimonials-carousel owl-carousel owl-theme">
+            {% for testimonial in testimonials %}
+            <div class="item">
+              <p>
+                {{ testimonial.feedback }}
+              </p>
+              <div class="thumb-box">
+                <div class="thumb">
+                  <img src="{{ testimonial.profile_photo.crop.100x100 }}" alt="Thumb">
+                </div>
+              </div>
+              <h5>{{ testimonial.name }}</h5>
+              <span>{{ testimonial.designation }}</span>
+            </div>
+            {% endfor %}
+            {% comment %}
+            <div class="item">
+              <p>
+                Ashamed no inhabit ferrars it ye besides resolve. Own judgment
+                directly few trifling. Elderly as pursuit at regular do parlors.
+                Rank what has into fond pursuit at regular.
+              </p>
+              <div class="thumb-box">
+                <div class="thumb">
+                  <img src="{% static 'web/img/100x100.png' %}" alt="Thumb">
+                </div>
+              </div>
+              <h5>Jonath Dark</h5>
+              <span>Senior Developer</span>
+            </div>
+            <div class="item">
+              <p>
+                Ashamed no inhabit ferrars it ye besides resolve. Own judgment
+                directly few trifling. Elderly as pursuit at regular do parlors.
+                Rank what has into fond pursuit at regular.
+              </p>
+              <div class="thumb-box">
+                <div class="thumb">
+                  <img src="{% static 'web/img/100x100.png' %}" alt="Thumb">
+                </div>
+              </div>
+              <h5>Jonath Dark</h5>
+              <span>Senior Developer</span>
+            </div>
+            {% endcomment %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Testimonials -->
+
+<!-- Star Blog
+    ============================================= -->
+<div class="blog-area bg-gray blog-standard default-padding bottom-less">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 offset-lg-3">
+        <div class="heading-center text-center">
+          <h5>Latest News</h5>
+          <h2>Most Popular Breaking News & Top Stories</h2>
+        </div>
+      </div>
+    </div>
+    <div class="blog-items">
+      <div class="row">
+        <!-- Single Item -->
+        <div class="col-lg-4 col-md-6 single-item">
+          <div class="item">
+            <div class="thumb">
+              <img src="{% static 'web/img/800x900.png' %}" alt="Thumb">
+              <div class="date">15 Jul, 2021</div>
+              <div class="overlay">
+                <div class="content">
+                  <h4>
+                    <a href="#">The for fully had she there leave merit enjoy forth.</a>
+                  </h4>
+                </div>
+                <div class="footer-meta">
+                  <ul>
+                    <li>
+                      <img src="{% static 'web/img/100x100.png' %}" alt="Author">
+                      <span>By </span>
+                      <a href="#">John Baus</a>
+                    </li>
+                    <li>
+                      <span>In </span>
+                      <a href="#">Creative</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Single Item -->
+        <!-- Single Item -->
+        <div class="col-lg-4 col-md-6 single-item thumb-less">
+          <div class="item">
+            <div class="date">18 Aug, 2021</div>
+            <h4>
+              <a href="#">Impossible admiration in particular conviction up.</a>
+            </h4>
+            <p>
+              Coming merits and was talent enough far. Sir joy northward
+              sportsmen education. Discovery incommode earnestly no he commanded
+              if Put still any about manor. Estimable me disposing of be
+              moonlight cordially curiosity.
+            </p>
+            <div class="footer-meta">
+              <ul>
+                <li>
+                  <img src="{% static 'web/img/100x100.png' %}" alt="Author">
+                  <span>By </span>
+                  <a href="#">John Baus</a>
+                </li>
+                <li>
+                  <span>In </span>
+                  <a href="#">Agency</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End Single Item -->
+        <!-- Single Item -->
+        <div class="col-lg-4 col-md-6 single-item">
+          <div class="item">
+            <div class="thumb">
+              <img src="{% static 'web/img/800x900.png' %}" alt="Thumb">
+              <div class="date">27 Nov, 2021</div>
+              <div class="overlay">
+                <div class="content">
+                  <h4>
+                    <a href="#">Throwing sociable children to achiving point.</a>
+                  </h4>
+                </div>
+                <div class="footer-meta">
+                  <ul>
+                    <li>
+                      <img src="{% static 'web/img/100x100.png' %}" alt="Author">
+                      <span>By </span>
+                      <a href="#">John Baus</a>
+                    </li>
+                    <li>
+                      <span>In </span>
+                      <a href="#">Creative</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Single Item -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Blog -->
+{% endblock %}
