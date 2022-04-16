@@ -1,6 +1,6 @@
 from django.db import models
 from versatileimagefield.fields import VersatileImageField
-# Create your models here.
+from django.urls import reverse
 
 
 class Contact(models.Model):
@@ -79,7 +79,10 @@ class Service(models.Model):
     icon = models.FileField()
     description = models.TextField()
     content = models.TextField()
-    
+    slug = models.SlugField(unique=True)
+
+    def get_absolute_url(self):
+        return reverse('web:services-details', kwargs={'slug': self.slug})
 
     def __str__(self):
         return str(self.title)

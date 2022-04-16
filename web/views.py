@@ -52,8 +52,8 @@ def servicestwo(request):
     return render(request, "web/services-2.html", context)
 
 
-def servicesdetails(request, pk):
-    service = Service.objects.get(pk=pk)
+def servicesdetails(request, slug):
+    service = Service.objects.get(slug=slug)
     services = Service.objects.all()
     context = {"is_servicesdetails": True, "service":service, "services":services}
     return render(request, "web/services-details.html", context)

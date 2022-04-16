@@ -11,7 +11,7 @@ Main Color   : #f35a38
 -------------------------------------
 
 Table of contents
-        
+
     01. Template default css
     02. Navbar
         - Navbar Default
@@ -107,7 +107,7 @@ body.dark-layout p {
   color: #cccccc;
 }
 
-body.dark-layout .navbar .side, 
+body.dark-layout .navbar .side,
 body.dark-layout .navbar .side p {
   color: #666666;
 }
@@ -201,7 +201,7 @@ pre {
   line-height: 1.42857143;
 }
 
-input:focus, textarea:focus, 
+input:focus, textarea:focus,
  select:focus {
   outline: none;
   box-shadow: inherit;
@@ -218,9 +218,9 @@ a, a:active, a:focus, a:hover {
   color: #232323;
 }
 
-.dark-layout a, 
-.dark-layout a:active, 
-.dark-layout a:focus, 
+.dark-layout a,
+.dark-layout a:active,
+.dark-layout a:focus,
 .dark-layout a:hover {
   color: #ffffff;
 }
@@ -248,10 +248,10 @@ b, strong {
   background-image: inherit !important;
 }
 
-.btn.focus, 
- .btn:active:focus, 
- .btn:active:hover, 
- .btn:focus, 
+.btn.focus,
+ .btn:active:focus,
+ .btn:active:hover,
+ .btn:focus,
  .btn:hover {
   outline: 0;
 }
@@ -960,13 +960,13 @@ body.dark-layout .bg-gray {
 }
 
 
-.text-light h1, 
- .text-light h2, 
- .text-light h3, 
- .text-light h4, 
- .text-light h5, 
- .text-light h6, 
- .text-light p, 
+.text-light h1,
+ .text-light h2,
+ .text-light h3,
+ .text-light h4,
+ .text-light h5,
+ .text-light h6,
+ .text-light p,
  .text-light a {
   color: #ffffff;
 }
@@ -1135,7 +1135,7 @@ body.dark-layout .bg-gray {
   border: 2px solid #ffffff;
 }
 
-.btn.btn-sm-pro.btn-border-light:hover, 
+.btn.btn-sm-pro.btn-border-light:hover,
  .btn.btn-sm-pro.btn-border-light:focus {
   background-color: #ffffff;
   color: #232323;
@@ -1203,7 +1203,7 @@ body.dark-layout .bg-gray {
   color: #232323;
 }
 
-.btn.btn-light:hover, 
+.btn.btn-light:hover,
  .btn.btn-light:focus {
   background: transparent none repeat scroll 0 0;
   border: 2px solid #ffffff;
@@ -1262,7 +1262,7 @@ body.dark-layout .bg-gray {
   color: #f35a38;
 }
 
-.btn-dark:hover, 
+.btn-dark:hover,
  .btn-dark:focus {
   color: #232323 !important;
   background: transparent;
@@ -1326,14 +1326,14 @@ body.dark-layout .bg-gray {
   border: 2px solid #4628ba !important;
 }
 
-.btn-theme.effect:hover, 
+.btn-theme.effect:hover,
  .btn-theme.effect:focus {
   background: #f35a38 none repeat scroll 0 0;
   border: 2px solid #f35a38;
   color: #ffffff;
 }
 
-.blue .btn-theme.effect:hover, 
+.blue .btn-theme.effect:hover,
  .blue .btn-theme.effect:focus {
   background: #4628ba none repeat scroll 0 0;
   border: 2px solid #4628ba;
@@ -1558,8 +1558,8 @@ nav.bootsnav.navbar-default.info-topbar.active-full ul li a {
   padding: 35px 20px;
 }
 
-.attr-nav > a.btn-theme.effect:hover, 
-.attr-nav > a.btn-theme.effect, 
+.attr-nav > a.btn-theme.effect:hover,
+.attr-nav > a.btn-theme.effect,
 .attr-nav > a.btn-theme.effect:focus {
   background: #f35a38 none repeat scroll 0 0;
   border: 2px solid #f35a38;
@@ -1803,8 +1803,8 @@ nav.navbar.bootsnav.sticked .attr-nav.social li {
 }
 
 
-/* ============================================================== 
-     # Topbar 
+/* ==============================================================
+     # Topbar
 =================================================================== */
 
 .top-bar-area.transparent.bottom-border {
@@ -1917,7 +1917,7 @@ nav.navbar.bootsnav.sticked .attr-nav.social li {
   float: right;
 }
 
-.top-bar-area .item-flex .language-switcher .dropdown-toggle, 
+.top-bar-area .item-flex .language-switcher .dropdown-toggle,
 .top-bar-area .item-flex .language-switcher .dropdown-toggle:focus {
     border: none;
     color: #ffffff;
@@ -1968,8 +1968,8 @@ nav.navbar.bootsnav.sticked .attr-nav.social li {
 }
 
 
-/* ============================================================== 
-     # Bradcrumb 
+/* ==============================================================
+     # Bradcrumb
 =================================================================== */
 .breadcrumb-area {
   padding: 150px 0;
@@ -2038,7 +2038,7 @@ nav.navbar.bootsnav.sticked .attr-nav.social li {
   display: none;
 }
 
-.breadcrumb-area .breadcrumb a, 
+.breadcrumb-area .breadcrumb a,
 .breadcrumb-area .breadcrumb li {
   font-weight: 600;
   text-transform: uppercase;
@@ -2048,16 +2048,16 @@ nav.navbar.bootsnav.sticked .attr-nav.social li {
 
 
 
-/* ============================================================== 
-     # Banner 
+/* ==============================================================
+     # Banner
 =================================================================== */
-body, 
-.banner-area, 
+body,
+.banner-area,
 .banner-area div {
   height: 100%;
 }
 
-.banner-area.auto-height, 
+.banner-area.auto-height,
 .banner-area.auto-height div {
   height: auto;
 }
@@ -2073,7 +2073,7 @@ body,
   width: 100%;
 }
 
-.banner-area .box-cell, 
+.banner-area .box-cell,
  .banner-area .box-cell div {
   height: auto;
 }
@@ -2175,29 +2175,29 @@ body,
 }
 
 /* Animation delays */
-.banner-area .carousel-item h1:first-child, 
- .banner-area .carousel-item h2:first-child, 
- .banner-area .carousel-item h3:first-child, 
- .banner-area .carousel-item h4:first-child, 
- .banner-area .carousel-item h5:first-child, 
+.banner-area .carousel-item h1:first-child,
+ .banner-area .carousel-item h2:first-child,
+ .banner-area .carousel-item h3:first-child,
+ .banner-area .carousel-item h4:first-child,
+ .banner-area .carousel-item h5:first-child,
  .banner-area .carousel-item h6:first-child {
   animation-delay: .5s;
 }
 
-.banner-area .carousel-item h1:nth-child(2), 
- .banner-area .carousel-item h2:nth-child(2), 
- .banner-area .carousel-item h3:nth-child(2), 
- .banner-area .carousel-item h4:nth-child(2), 
- .banner-area .carousel-item h5:nth-child(2), 
+.banner-area .carousel-item h1:nth-child(2),
+ .banner-area .carousel-item h2:nth-child(2),
+ .banner-area .carousel-item h3:nth-child(2),
+ .banner-area .carousel-item h4:nth-child(2),
+ .banner-area .carousel-item h5:nth-child(2),
  .banner-area .carousel-item h6:nth-child(2) {
   animation-delay: .7s;
 }
 
-.carousel-caption h1:nth-child(3), 
- .carousel-caption h2:nth-child(3), 
- .carousel-caption h3:nth-child(3), 
- .carousel-caption h4:nth-child(3), 
- .carousel-caption h5:nth-child(3), 
+.carousel-caption h1:nth-child(3),
+ .carousel-caption h2:nth-child(3),
+ .carousel-caption h3:nth-child(3),
+ .carousel-caption h4:nth-child(3),
+ .carousel-caption h5:nth-child(3),
  .carousel-caption h6:nth-child(3) {
   animation-delay: .9s;
 }
@@ -2210,7 +2210,7 @@ body,
   animation-delay: .6s;
 }
 
-.banner-area .carousel-item a, 
+.banner-area .carousel-item a,
  .banner-area .carousel-item button {
   animation-delay: .7s;
 }
@@ -2221,21 +2221,21 @@ body,
   transition-property: opacity;
 }
 
-.carousel-fade .carousel-inner .item, 
- .carousel-fade .carousel-inner .active.left, 
+.carousel-fade .carousel-inner .item,
+ .carousel-fade .carousel-inner .active.left,
  .carousel-fade .carousel-inner .active.right {
   opacity: 0;
 }
 
-.carousel-fade .carousel-inner .active, 
- .carousel-fade .carousel-inner .next.left, 
+.carousel-fade .carousel-inner .active,
+ .carousel-fade .carousel-inner .next.left,
  .carousel-fade .carousel-inner .prev.right {
   opacity: 1;
 }
 
-.carousel-fade .carousel-inner .next, 
- .carousel-fade .carousel-inner .prev, 
- .carousel-fade .carousel-inner .active.left, 
+.carousel-fade .carousel-inner .next,
+ .carousel-fade .carousel-inner .prev,
+ .carousel-fade .carousel-inner .active.left,
  .carousel-fade .carousel-inner .active.right {
   left: 0;
   -webkit-transform: translate3d(0, 0, 0);
@@ -2486,7 +2486,7 @@ body,
     font-weight: 400;
 }
 
-.banner-area.text-center p, 
+.banner-area.text-center p,
 .banner-area .text-center p {
     padding: 0 10%;
     font-size: 20px;
@@ -2612,7 +2612,7 @@ body,
     content: "";
     height: 100%;
     width: 100%;
-    background: url(assets/img/shape/2.png);
+    background: url({% static 'web/img/shape/2.png' %});
     background-size: cover;
     background-position: center bottom;
 }
@@ -2644,7 +2644,7 @@ body,
     content: "";
     height: 400px;
     width: 400px;
-    background: url(assets/img/shape/1.png);
+    background: url({% static 'web/img/shape/1.png' %});
     background-repeat: no-repeat;
     background-size: contain;
     opacity: 0.3;
@@ -2889,7 +2889,7 @@ body,
     content: "";
     height: 150%;
     width: 150%;
-    background: url(assets/img/color-bg-2.png);
+    background: url({% static 'web/img/color-bg-2.png' %});
     z-index: -1;
     background-repeat: no-repeat;
     background-size: contain;
@@ -2949,7 +2949,7 @@ body,
     position: absolute;
     left: -50px;
     top: -50px;
-    background: url(assets/img/round-shappe.png);
+    background: url({% static 'web/img/round-shappe.png' %});
     content: "";
     height: 150px;
     width: 150px;
@@ -3011,7 +3011,7 @@ body,
     content: "";
     height: 100%;
     width: 100px;
-    background: url(assets/img/brush.png);
+    background: url({% static 'web/img/brush.png' %});
     background-repeat: no-repeat;
     background-position: right;
 }
@@ -3072,7 +3072,7 @@ body,
     opacity: 1;
 }
 
-/* ============================================================== 
+/* ==============================================================
      # Video Button Play
 =================================================================== */
 .video-play-button {
@@ -3197,7 +3197,7 @@ body,
   margin-left: 10px;
 }
 
-.video-play-button.relative::before, 
+.video-play-button.relative::before,
 .video-play-button.relative::after {
   height: 65px;
   width: 65px;
@@ -3268,8 +3268,8 @@ body,
   border-color: #dbdbdb;
 }
 
-.nice-select:active, 
-.nice-select.open, 
+.nice-select:active,
+.nice-select.open,
 .nice-select:focus {
   border-color: #999;
 }
@@ -3404,8 +3404,8 @@ body,
   margin: 0;
 }
 
-.nice-select .option:hover, 
-.nice-select .option.focus, 
+.nice-select .option:hover,
+.nice-select .option.focus,
 .nice-select .option.selected.focus {
   background-color: #f6f6f6;
 }
@@ -3430,7 +3430,7 @@ body,
 
 
 
-/* ============================================================== 
+/* ==============================================================
      # Features
 =================================================================== */
 
@@ -3478,7 +3478,7 @@ body,
     content: "";
     height: 100px;
     width: 100px;
-    background: url(assets/img/shape/8.png);
+    background: url({% static 'web/img/shape/8.png' %});
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -3610,7 +3610,7 @@ body,
   margin-bottom: 0;
 }
 
-/* ============================================================== 
+/* ==============================================================
      # About
 =================================================================== */
 .about-area {
@@ -3724,7 +3724,7 @@ body,
     content: "";
     height: 10px;
     width: 100%;
-    background: url(assets/img/shape/line.png);
+    background: url({% static 'web/img/shape/line.png' %});
     background-repeat: no-repeat;
 }
 
@@ -3823,7 +3823,7 @@ body,
 }
 
 
-/* ============================================================== 
+/* ==============================================================
      # About Version Two
 =================================================================== */
 
@@ -4004,14 +4004,14 @@ ul.achivement li:last-child .counter {
     content: "";
     height: 150px;
     width: 150px;
-    background: url(assets/img/shape/2.png);
+    background: url({% static 'web/img/shape/2.png' %});
     background-size: contain;
     background-repeat: no-repeat;
     z-index: -1;
 }
 
 
-/* ============================================================== 
+/* ==============================================================
      # About Version Three
 =================================================================== */
 
@@ -4066,7 +4066,7 @@ ul.achivement li:last-child .counter {
     margin-bottom: 30px;
 }
 
-/* ============================================================== 
+/* ==============================================================
      # Free Trial Area
 =================================================================== */
 
@@ -4194,7 +4194,7 @@ ul.achivement li:last-child .counter {
 }
 
 
-/* ============================================================== 
+/* ==============================================================
      # Feature Area
 =================================================================== */
 .feature-area .fixed-shape {
@@ -4252,7 +4252,7 @@ ul.achivement li:last-child .counter {
     content: "";
     height: 100%;
     width: 100%;
-    background: url(assets/img/shape/21.png);
+    background: url({% static 'web/img/shape/21.png' %});
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -4323,7 +4323,7 @@ ul.achivement li:last-child .counter {
   background: #F48687;
 }
 
-/* ============================================================== 
+/* ==============================================================
      # Features
 =================================================================== */
 
@@ -4364,7 +4364,7 @@ ul.achivement li:last-child .counter {
     content: "";
     height: 70px;
     width: 80px;
-    background: url(assets/img/shape/icon-shape.png);
+    background: url({% static 'web/img/shape/icon-shape.png' %});
     z-index: -1;
     border-radius: 30px;
     transition: all 0.35s ease-in-out;
@@ -4392,12 +4392,12 @@ ul.achivement li:last-child .counter {
     border-radius: 8px;
 }
 
-.our-features-area .features-box .single-item:nth-child(2) .item, 
+.our-features-area .features-box .single-item:nth-child(2) .item,
 .our-features-area .features-box .single-item .item:hover {
     box-shadow: 0 0 10px #cccccc;
 }
 
-.dark-layout .our-features-area .features-box .single-item:nth-child(2) .item, 
+.dark-layout .our-features-area .features-box .single-item:nth-child(2) .item,
 .dark-layout .our-features-area .features-box .single-item .item:hover {
     box-shadow: inherit;
     background: #101c3d;
@@ -4440,14 +4440,14 @@ ul.achivement li:last-child .counter {
     background: #ffffff;
 }
 
-.our-features-area .features-box .single-item:nth-child(2) .item .content i, 
+.our-features-area .features-box .single-item:nth-child(2) .item .content i,
 .our-features-area .features-box .single-item .item:hover .content i {
     opacity: 1;
     padding-left: 20px;
 }
 
 
-/* ============================================================== 
+/* ==============================================================
      # Services
 =================================================================== */
 
@@ -4547,7 +4547,7 @@ ul.achivement li:last-child .counter {
   }
 }
 
-/* ============================================================== 
+/* ==============================================================
      # Services Version Two
 =================================================================== */
 
@@ -4617,7 +4617,7 @@ ul.achivement li:last-child .counter {
     -webkit-text-fill-color: transparent;
 }
 
-.services-content-box .item > i::after, 
+.services-content-box .item > i::after,
 .services-content-box .item .icon > i::after {
     position: absolute;
     left: -10px;
@@ -4634,7 +4634,7 @@ ul.achivement li:last-child .counter {
     opacity: 0.07;
 }
 
-.dark-layout .services-content-box .item > i::after, 
+.dark-layout .services-content-box .item > i::after,
 .dark-layout .services-content-box .item .icon > i::after {
     background: #ffffff;
 }
@@ -4724,7 +4724,7 @@ ul.achivement li:last-child .counter {
 }
 
 
-/* ============================================================== 
+/* ==============================================================
      # Services Version Three
 =================================================================== */
 
@@ -4746,7 +4746,7 @@ ul.achivement li:last-child .counter {
   display: none;
 }
 
-.main-services-area .main-services-box::before, 
+.main-services-area .main-services-box::before,
 .main-services-area .main-services-box::after {
     filter: blur(80px);
 }
@@ -4764,7 +4764,7 @@ ul.achivement li:last-child .counter {
 }
 
 
-.main-services-box .single-item:first-child .item, 
+.main-services-box .single-item:first-child .item,
 .main-services-box .single-item:nth-child(2) .item {
     padding-top: 0;
 }
@@ -4777,7 +4777,7 @@ ul.achivement li:last-child .counter {
     padding-right: 0;
 }
 
-.main-services-box .single-item:last-child .item, 
+.main-services-box .single-item:last-child .item,
 .main-services-box .single-item:nth-last-child(2) .item {
     padding-bottom: 0;
 }
@@ -4844,7 +4844,7 @@ ul.achivement li:last-child .counter {
 }
 
 
-/* ============================================================== 
+/* ==============================================================
      # Services Details Area
 =================================================================== */
 
@@ -5064,7 +5064,7 @@ ul.achivement li:last-child .counter {
 }
 
 
-/* ============================================================== 
+/* ==============================================================
      # Services List
 =================================================================== */
 
@@ -5142,7 +5142,7 @@ ul.achivement li:last-child .counter {
 
 
 
-/* ============================================================== 
+/* ==============================================================
      # Work Process
 =================================================================== */
 .process-list-items .icon {
@@ -5204,7 +5204,7 @@ ul.achivement li:last-child .counter {
     content: "";
     height: 90px;
     width: 200px;
-    background: url(assets/img/shape/arrow.png);
+    background: url({% static 'web/img/shape/arrow.png' %});
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right top;
@@ -5213,13 +5213,13 @@ ul.achivement li:last-child .counter {
     opacity: 0;
 }
 
-.process-list-items .single-item:first-child .item::after, 
+.process-list-items .single-item:first-child .item::after,
 .process-list-items .single-item .item:hover::after {
     opacity: 0.3;
     transform: rotate(-53deg);
 }
 
-/* ============================================================== 
+/* ==============================================================
      # Boosting Area
 =================================================================== */
 .fun-fact-area {
@@ -5263,7 +5263,7 @@ ul.achivement li:last-child .counter {
     content: "";
     height: 100%;
     width: 100%;
-    background: url(assets/img/map.svg);
+    background: url({% static 'web/img/map.svg' %});
     background-position: bottom;
     z-index: -1;
     opacity: 0.4;
@@ -5323,7 +5323,7 @@ ul.achivement li:last-child .counter {
 }
 
 
-/* ============================================================== 
+/* ==============================================================
      # Clients
 =================================================================== */
 .clients-area .partner-carousel {
@@ -5338,7 +5338,7 @@ ul.achivement li:last-child .counter {
 }
 
 
-/* ============================================================== 
+/* ==============================================================
      # Team Area
 =================================================================== */
 
@@ -5435,7 +5435,7 @@ ul.achivement li:last-child .counter {
 }
 
 
-/* ============================================================== 
+/* ==============================================================
      # Team Single
 =================================================================== */
 
@@ -5573,7 +5573,7 @@ ul.achivement li:last-child .counter {
     margin: 0;
 }
 
-/* ============================================================== 
+/* ==============================================================
      # Why Choose Us
 =================================================================== */
 
@@ -5726,7 +5726,7 @@ ul.achivement li:last-child .counter {
 }
 
 
-/* ============================================================== 
+/* ==============================================================
      # Why Choose us Version Two
 =================================================================== */
 
@@ -5828,8 +5828,8 @@ ul.achivement li:last-child .counter {
 }
 
 
-/* ============================================================== 
-    Faq 
+/* ==============================================================
+    Faq
 =================================================================== */
 .faq-area .info ul {
     margin-right: -15px;
@@ -5980,8 +5980,8 @@ ul.achivement li:last-child .counter {
     box-shadow: inherit;
 }
 
-/* ============================================================== 
-     # Pricing Table 
+/* ==============================================================
+     # Pricing Table
 =================================================================== */
 
 .pricing-area .pricing {
@@ -6034,7 +6034,7 @@ ul.achivement li:last-child .counter {
     content: "";
     height: 100%;
     width: 100%;
-    background: url(assets/img/shape/circle-shape.png);
+    background: url({% static 'web/img/shape/circle-shape.png' %});
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -6042,7 +6042,7 @@ ul.achivement li:last-child .counter {
 }
 
 .blue .pricing-header i::after {
-    background: url(assets/img/shape/circle-shape-blue.png);
+    background: url({% static 'web/img/shape/circle-shape-blue.png' %});
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -6154,7 +6154,7 @@ ul.achivement li:last-child .counter {
     border: 1px solid;
 }
 
-/* ============================================================== 
+/* ==============================================================
      # Portfolio
 =================================================================== */
 
@@ -6297,7 +6297,7 @@ ul.achivement li:last-child .counter {
 }
 
 
-/* ============================================================== 
+/* ==============================================================
      # Gallery Carousel
 =================================================================== */
 
@@ -6438,7 +6438,7 @@ ul.achivement li:last-child .counter {
   display: none;
 }
 
-.projects-area .projects-carousel .owl-nav .owl-prev, 
+.projects-area .projects-carousel .owl-nav .owl-prev,
 .projects-area .projects-carousel .owl-nav .owl-next {
     background: transparent none repeat scroll 0 0;
     color: #232323;
@@ -6480,7 +6480,7 @@ ul.achivement li:last-child .counter {
 }
 
 
-/* ============================================================== 
+/* ==============================================================
      # Project Details
 =================================================================== */
 
@@ -6598,7 +6598,7 @@ ul.achivement li:last-child .counter {
     margin-top: 30px;
 }
 
-/* ============================================================== 
+/* ==============================================================
      # Case Studies
 =================================================================== */
 
@@ -6672,7 +6672,7 @@ ul.achivement li:last-child .counter {
   margin: 0;
 }
 
-.case-studies-area .case-carousel .owl-nav .owl-prev, 
+.case-studies-area .case-carousel .owl-nav .owl-prev,
 .case-studies-area .case-carousel .owl-nav .owl-next {
   background: transparent none repeat scroll 0 0;
   text-shadow: 0 1px 2px rgb(0 0 0 / 60%);
@@ -6707,7 +6707,7 @@ ul.achivement li:last-child .counter {
   opacity: 1;
 }
 
-/* ============================================================== 
+/* ==============================================================
      # Skill
 =================================================================== */
 
@@ -6950,7 +6950,7 @@ ul.achivement li:last-child .counter {
 }
 
 
-/* ============================================================== 
+/* ==============================================================
      # Brand / Clients
 =================================================================== */
 
@@ -7042,7 +7042,7 @@ ul.achivement li:last-child .counter {
 }
 
 
-/* ============================================================== 
+/* ==============================================================
      # Testimonials
 =================================================================== */
 
@@ -7175,7 +7175,7 @@ ul.achivement li:last-child .counter {
     border-top: 1px solid #cccccc;
 }
 
-.testimonials-area .thumb-box::after, 
+.testimonials-area .thumb-box::after,
 .testimonials-area .thumb-box::before {
   position: absolute;
   margin: auto;
@@ -7189,22 +7189,22 @@ ul.achivement li:last-child .counter {
   content: "";
 }
 
-.dark-layout .testimonials-area .thumb-box::after, 
+.dark-layout .testimonials-area .thumb-box::after,
 .dark-layout .testimonials-area .thumb-box::before {
     border-top: 1px solid #0D152E;
 }
 
-.testimonials-area.bg-dark .thumb-box::after, 
+.testimonials-area.bg-dark .thumb-box::after,
 .testimonials-area.bg-dark .thumb-box::before {
   border-top: 1px solid #0a1015;
 }
 
-.testimonials-area.bg-gray .thumb-box::after, 
+.testimonials-area.bg-gray .thumb-box::after,
 .testimonials-area.bg-gray .thumb-box::before {
   border-top: 1px solid #ecf6fa;
 }
 
-.dark-layout .testimonials-area.bg-gray .thumb-box::after, 
+.dark-layout .testimonials-area.bg-gray .thumb-box::after,
 .dark-layout .testimonials-area.bg-gray .thumb-box::before {
     border-top: 1px solid #101c3d;
 }
@@ -7251,7 +7251,7 @@ ul.achivement li:last-child .counter {
   margin: 0;
 }
 
-.testimonials-area .testimonial-items .testimonials-carousel .owl-nav .owl-prev, 
+.testimonials-area .testimonial-items .testimonials-carousel .owl-nav .owl-prev,
 .testimonials-area .testimonial-items .testimonials-carousel .owl-nav .owl-next {
   background: transparent none repeat scroll 0 0;
   color: #232323;
@@ -7266,7 +7266,7 @@ ul.achivement li:last-child .counter {
   width: 40px;
 }
 
-.testimonials-area.bg-dark .testimonial-items .testimonials-carousel .owl-nav .owl-prev, 
+.testimonials-area.bg-dark .testimonial-items .testimonials-carousel .owl-nav .owl-prev,
 .testimonials-area.bg-dark .testimonial-items .testimonials-carousel .owl-nav .owl-next {
   color: #ffffff;
 }
@@ -7277,7 +7277,7 @@ ul.achivement li:last-child .counter {
 }
 
 
-/* ============================================================== 
+/* ==============================================================
      # Partner
 =================================================================== */
 
@@ -7330,7 +7330,7 @@ ul.achivement li:last-child .counter {
 }
 
 
-/* ============================================================== 
+/* ==============================================================
      # Blog
 =================================================================== */
 
@@ -7771,7 +7771,7 @@ ul.achivement li:last-child .counter {
   margin-bottom: 0;
 }
 
-.blog-area .sidebar .sidebar-item.category .sidebar-info, 
+.blog-area .sidebar .sidebar-item.category .sidebar-info,
 .blog-area .sidebar .sidebar-item.archives .sidebar-info {
   margin-top: -5px;
 }
@@ -8206,7 +8206,7 @@ ul.achivement li:last-child .counter {
   font-weight: 500;
 }
 
-.blog-area .blog-content .post-tags, 
+.blog-area .blog-content .post-tags,
 .blog-area .blog-content .share {
   margin-top: 40px;
   display: flex;
@@ -8386,8 +8386,8 @@ ul.achivement li:last-child .counter {
   text-transform: capitalize;
 }
 
-.comments-list .commen-item .content h3, 
-.comments-list .commen-item .content h4, 
+.comments-list .commen-item .content h3,
+.comments-list .commen-item .content h4,
 .comments-list .commen-item .content h5 {
     font-size: 16px;
     font-weight: 700;
@@ -8468,7 +8468,7 @@ ul.achivement li:last-child .counter {
   margin-right: 10px;
 }
 
-.comments-form input, 
+.comments-form input,
 .comments-form textarea {
   border: none;
   box-shadow: inherit;
@@ -8490,8 +8490,8 @@ ul.achivement li:last-child .counter {
   margin-top: 15px;
 }
 
-.comments-form .title h2, 
-.comments-form .title h3, 
+.comments-form .title h2,
+.comments-form .title h3,
 .comments-form .title h4 {
   font-weight: 900;
   margin-bottom: 30px;
@@ -8535,7 +8535,7 @@ ul.pagination {
 }
 
 
-/* ============================================================== 
+/* ==============================================================
      # Contact
 =================================================================== */
 .contact-area .thumb {
@@ -8644,9 +8644,9 @@ ul.pagination {
     margin-bottom: 20px;
 }
 
-.contact-area .contact-items .form-items input, 
+.contact-area .contact-items .form-items input,
 .contact-area .contact-items .form-items textarea,
-.contact-area .contact-items .form-items input:focus, 
+.contact-area .contact-items .form-items input:focus,
 .contact-area .contact-items .form-items textarea:focus {
     border: none;
     background: transparent;
@@ -8656,9 +8656,9 @@ ul.pagination {
     box-shadow: inherit;
 }
 
-.dark-layout .contact-area .contact-items .form-items input, 
+.dark-layout .contact-area .contact-items .form-items input,
 .dark-layout .contact-area .contact-items .form-items textarea,
-.dark-layout .contact-area .contact-items .form-items input:focus, 
+.dark-layout .contact-area .contact-items .form-items input:focus,
 .dark-layout .contact-area .contact-items .form-items textarea:focus {
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
     color: #ffffff;
@@ -8691,16 +8691,16 @@ img.loader {
 }
 
 
-/* ============================================================== 
+/* ==============================================================
      # Error Page
 =================================================================== */
 
-.error-page-area, 
+.error-page-area,
 .error-page-area div {
     height: 100%;
 }
 
-.error-page-area div.error-box, 
+.error-page-area div.error-box,
 .error-page-area div.error-box div {
     height: auto;
 }
@@ -8779,7 +8779,7 @@ img.loader {
 
 
 
-/* ============================================================== 
+/* ==============================================================
      # Footer
 =================================================================== */
 
@@ -8957,7 +8957,7 @@ footer .footer-bottom form .input-group.stylish-input-group {
     position: relative;
 }
 
-footer .footer-bottom form input, 
+footer .footer-bottom form input,
 footer .footer-bottom form input:focus {
     width: 100%;
     background: transparent;
@@ -8968,7 +8968,7 @@ footer .footer-bottom form input:focus {
     min-height: 60px;
 }
 
-footer.bg-dark .footer-bottom form input, 
+footer.bg-dark .footer-bottom form input,
 footer.bg-dark .footer-bottom form input:focus {
     color: #ffffff;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -9033,8 +9033,8 @@ footer.bg-dark .footer-bottom p {
 }
 
 
-/* ============================================================== 
-     # Preloader 
+/* ==============================================================
+     # Preloader
 =================================================================== */
 .site-preloader {
   position: fixed;
