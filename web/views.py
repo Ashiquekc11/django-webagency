@@ -4,6 +4,7 @@ from django.urls import reverse
 from django.contrib.auth.decorators import login_required
 import json
 from .models import Author, Contact, Blog, Project, Service, Slider, Testimonial
+from .forms import ContactForm
 
 
 def index(request):
@@ -26,7 +27,16 @@ def startup(request):
 
 
 def contact(request):
-    context = {"is_contact": True}
+    form = ContactForm(request.POST or None)
+    if request.method == "POST":
+        if form.is_valid():
+            form.save()
+    else:
+        pass
+    context = {
+        "is_contact": True,
+        "form":form
+    }
     return render(request, "web/contact.html", context)
 
 
@@ -37,6 +47,7 @@ def notfound(request):
 
 def projects(request):
     projects = Project.objects.all()
+    # q = Project.objects.values('category').distinct()
     context = {
         "is_projects": True,
         "projects": projects,

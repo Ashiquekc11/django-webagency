@@ -5,7 +5,7 @@
 {% block content %}
 {% include 'includes/header-2.html' %}
 
-    <!-- Start Breadcrumb 
+    <!-- Start Breadcrumb
     ============================================= -->
     <div class="breadcrumb-area shadow dark bg-cover text-center text-light" style="background-image: url({% static 'web/img/2440x1578.png' %});">
         <div class="container">
@@ -33,15 +33,16 @@
                 </div>
                 <!-- Fixed BG -->
                 <div class="row align-center">
-                
+
                     <div class="col-lg-6 contact-box">
                         <div class="form-items">
                             <h2>You can connect with us when need help!</h2>
-                            <form action="{% static 'web/mail/contact.php" method="POST" class="contact-form">
+                            <form action="" method="POST" class="contact-form">
+                              {% csrf_token %}
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="form-group">
-                                            <input class="form-control" id="name" name="name" placeholder="Name" type="text">
+                                            {{form.name}} {{ form.name.errors }}
                                             <span class="alert-error"></span>
                                         </div>
                                     </div>
@@ -49,13 +50,13 @@
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="form-group">
-                                            <input class="form-control" id="email" name="email" placeholder="Email*" type="email">
+                                          {{form.email}} {{ form.email.errors }}
                                             <span class="alert-error"></span>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
-                                            <input class="form-control" id="phone" name="phone" placeholder="Phone" type="text">
+                                          {{form.phone}} {{ form.phone.errors }}
                                             <span class="alert-error"></span>
                                         </div>
                                     </div>
@@ -63,7 +64,7 @@
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="form-group comments">
-                                            <textarea class="form-control" id="comments" name="comments" placeholder="Tell Us About Project *"></textarea>
+                                          {{form.project_details}} {{ form.project_details.errors }}
                                         </div>
                                     </div>
                                 </div>

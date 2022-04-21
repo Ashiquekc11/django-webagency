@@ -1,9 +1,9 @@
 /* ===================================================================
-    
+
     Author          : Valid Theme
     Template Name   : Avedi - Creative & Digital Agency Multipurpose Template
     Version         : 1.0
-    
+
 * ================================================================= */
 
 (function($) {
@@ -23,13 +23,13 @@
             live: true // act on asynchronously loaded content (default is true)
         });
         wow.init();
-        
+
 
         /* ==================================================
             # Tooltip Init
         ===============================================*/
-        $('[data-toggle="tooltip"]').tooltip(); 
-        
+        $('[data-toggle="tooltip"]').tooltip();
+
 
 
         /* ==================================================
@@ -384,38 +384,38 @@
         /* ==================================================
             Contact Form Validations
         ================================================== */
-        $('.contact-form').each(function() {
-            var formInstance = $(this);
-            formInstance.submit(function() {
-
-                var action = $(this).attr('action');
-
-                $("#message").slideUp(750, function() {
-                    $('#message').hide();
-
-                    $('#submit')
-                        .after('<img src="assets/img/ajax-loader.gif" class="loader" />')
-                        .attr('disabled', 'disabled');
-
-                    $.post(action, {
-                            name: $('#name').val(),
-                            email: $('#email').val(),
-                            phone: $('#phone').val(),
-                            comments: $('#comments').val()
-                        },
-                        function(data) {
-                            document.getElementById('message').innerHTML = data;
-                            $('#message').slideDown('slow');
-                            $('.contact-form img.loader').fadeOut('slow', function() {
-                                $(this).remove()
-                            });
-                            $('#submit').removeAttr('disabled');
-                        }
-                    );
-                });
-                return false;
-            });
-        });
+        // $('.contact-form').each(function() {
+        //     var formInstance = $(this);
+        //     formInstance.submit(function() {
+        //
+        //         var action = $(this).attr('action');
+        //
+        //         $("#message").slideUp(750, function() {
+        //             $('#message').hide();
+        //
+        //             $('#submit')
+        //                 .after('<img src="assets/img/ajax-loader.gif" class="loader" />')
+        //                 .attr('disabled', 'disabled');
+        //
+        //             $.post(action, {
+        //                     name: $('#name').val(),
+        //                     email: $('#email').val(),
+        //                     phone: $('#phone').val(),
+        //                     comments: $('#comments').val()
+        //                 },
+        //                 function(data) {
+        //                     document.getElementById('message').innerHTML = data;
+        //                     $('#message').slideDown('slow');
+        //                     $('.contact-form img.loader').fadeOut('slow', function() {
+        //                         $(this).remove()
+        //                     });
+        //                     $('#submit').removeAttr('disabled');
+        //                 }
+        //             );
+        //         });
+        //         return false;
+        //     });
+        // });
 
     }); // end document ready function
 })(jQuery); // End jQuery

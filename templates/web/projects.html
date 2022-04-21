@@ -32,7 +32,7 @@
                         <div class="mix-item-menu text-center">
                             <button class="active" data-filter="*">All</button>
                             {% for project in projects %}
-                            <button data-filter=".{{project.get_category_display| slugify}}">{{ project.get_category_display }}</button>
+                            <button data-filter=".{{project.get_category_display|slugify}}">{{ project.get_category_display }}</button>
                             {% endfor %}
                         </div>
                         <!-- End Mixitup Nav-->
@@ -41,13 +41,13 @@
                             <div id="portfolio-grid" class="portfolio-items colums-3">
                                 <!-- Single Item -->
                                 {% for project in projects %}
-                                <div class="pf-item  {{project.get_category_display| slugify}}">
+                                <div class="pf-item {{project.get_category_display|slugify}}">
                                     <div class="overlay">
                                         <img src="{{ project.image.crop.800x600 }}" alt="thumb">
                                         <a href="{{ project.image.crop.800x600 }}" class="item popup-link"><i class="fa fa-plus"></i></a>
                                         <div class="content">
                                             <span>{{project.category}}</span>
-                                            <h5><a href="{% url 'web:project-details' project.slug %}">{{project.title}}</a></h5>
+                                            <h5><a href="{{ project.get_absolute_url }}">{{project.title}}</a></h5>
                                         </div>
                                     </div>
                                 </div>

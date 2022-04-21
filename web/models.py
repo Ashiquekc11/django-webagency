@@ -90,3 +90,10 @@ class Service(models.Model):
 
     def __str__(self):
         return str(self.title)
+
+
+class Category(models.Model):
+    project_categorys = models.ForeignKey("Project", on_delete=models.CASCADE, related_name="project_categorys")
+
+    def __str__(self):
+        return str(self.categorys)
