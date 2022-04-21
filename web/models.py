@@ -5,7 +5,7 @@ from django.urls import reverse
 
 class Contact(models.Model):
     name = models.CharField(max_length=128)
-    email = models.EmailField(unique=True, null=True)
+    email = models.EmailField(blank=True, null=True)
     phone = models.CharField(max_length=128)
     project_details = models.TextField()
 

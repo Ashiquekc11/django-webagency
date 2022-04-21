@@ -27,7 +27,11 @@ def startup(request):
 
 
 def contact(request):
-    form = ContactForm(request.POST or None)
+    data = {
+    "name": "Ashique",
+    "email": "ashiquekc@gmail.com",
+    }
+    form = ContactForm(request.POST or None, initial=data)
     if request.method == "POST":
         if form.is_valid():
             form.save()
