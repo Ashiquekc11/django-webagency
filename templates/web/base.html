@@ -52,10 +52,10 @@
     </div>
     <!-- Preloader Ends -->
 
-    
-    {% block content %} 
 
-    {% endblock %} 
+    {% block content %}
+
+    {% endblock %}
 
  <!-- Star Footer
     ============================================= -->
@@ -67,14 +67,18 @@
                         <div class="f-item about">
                             <h4 class="widget-title">About Us</h4>
                             <p>
-                                Required honoured trifling eat pleasure man relation. Assurance yet bed was improving furniture man. Distrusts delighted Excuse few the remain highly feebly add people manner say. It high at my mind by roof. 
+                                Required honoured trifling eat pleasure man relation. Assurance yet bed was improving furniture man. Distrusts delighted Excuse few the remain highly feebly add people manner say. It high at my mind by roof.
 
                             </p>
                             <div class="social">
                                 <ul>
-                                    <li class="facebook">
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                  {% for social in socials %}
+                                    <li class="{{social.name}}">
+                                        <a href="{{social.url}}"><i class="fab fa-{{social.name}}"></i></a>
                                     </li>
+                                    {% endfor %}
+                                    {% comment %}
+
                                     <li class="twitter">
                                         <a href="#"><i class="fab fa-twitter"></i></a>
                                     </li>
@@ -84,6 +88,7 @@
                                     <li class="instagram">
                                         <a href="#"><i class="fab fa-instagram"></i></a>
                                     </li>
+                                    {% endcomment %}
                                 </ul>
                             </div>
                         </div>
@@ -141,15 +146,15 @@
                             <div class="address">
                                 <ul>
                                     <li>
-                                        <p>Address</p> 
+                                        <p>Address</p>
                                         <strong>California, TX 70240</strong>
                                     </li>
                                     <li>
-                                        <p>Email</p> 
+                                        <p>Email</p>
                                         <strong>support@validtheme.com</strong>
                                     </li>
                                     <li>
-                                        <p>Contact</p> 
+                                        <p>Contact</p>
                                         <strong>+44-20-7328-4499</strong>
                                     </li>
                                 </ul>
@@ -173,7 +178,7 @@
                                 <span class="input-group-addon">
                                     <button type="submit">
                                         <i class="fa fa-paper-plane"></i>
-                                    </button>  
+                                    </button>
                                 </span>
                             </div>
                         </form>
@@ -202,6 +207,7 @@
     <script src="{% static 'web/js/YTPlayer.min.js' %}"></script>
     <script src="{% static 'web/js/bootsnav.js' %}"></script>
     <script src="{% static 'web/js/main.js' %}"></script>
+    {% block javascript %} {% endblock javascript %}
 
 </body>
 </html>

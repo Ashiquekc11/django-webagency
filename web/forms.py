@@ -6,7 +6,7 @@ from django.forms import widgets
 class ContactForm(forms.ModelForm):
     class Meta:
         model = Contact
-        fields = "__all__"
+        exclude = ("ip_address",)
         widgets = {
             "name": widgets.TextInput(attrs={"class":"form-control", "placeholder": "Your Name"}),
             "phone": widgets.TextInput(attrs={"class":"form-control", "placeholder": "Your Phone"}),

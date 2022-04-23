@@ -7,6 +7,15 @@ from .models import Author, Contact, Blog, Project, Service, Slider, Testimonial
 from .forms import ContactForm
 
 
+def get_client_ip(request):
+    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+    if x_forwarded_for:
+        ip = x_forwarded_for.split(',')[0]
+    else:
+        ip = request.META.get('REMOTE_ADDR')
+    return ip
+
+
 def index(request):
     sliders = Slider.objects.all()
     projects = Project.objects.all()
@@ -26,21 +35,51 @@ def startup(request):
     return render(request, "web/index-startup.html", context)
 
 
+# def contact(request):
+#     data = {
+#     "name": "Ashique",
+#     "email": "ashiquekc@gmail.com",
+#     }
+#     form = ContactForm(request.POST or None, initial=data)
+#     print(request.user)
+#     if request.method == "POST":
+#         if form.is_valid():
+#             form_data = form.save(commit=False)
+#             form_data.ip_address = get_client_ip(request)
+#             form_data.save()
+#     else:
+#         pass
+#     context = {
+#         "is_contact": True,
+#         "form":form
+#     }
+#     return render(request, "web/contact.html", context)
+
+
 def contact(request):
-    data = {
-    "name": "Ashique",
-    "email": "ashiquekc@gmail.com",
-    }
-    form = ContactForm(request.POST or None, initial=data)
+    form = ContactForm(request.POST or None)
     if request.method == "POST":
         if form.is_valid():
             form.save()
+            response_data = {
+                "status": "true",
+                "title": "Successfully Submitted",
+                "message": "Message successfully updated",
+            }
+        else:
+            print(form.errors)
+            response_data = {
+                "status": "false",
+                "title": "Form validation error",
+            }
+        return HttpResponse(
+            json.dumps(response_data), content_type="application/javascript"
+        )
     else:
-        pass
-    context = {
-        "is_contact": True,
-        "form":form
-    }
+        context = {
+            "is_contact": True,
+            "form": form,
+        }
     return render(request, "web/contact.html", context)
 
 

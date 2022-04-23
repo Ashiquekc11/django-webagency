@@ -8,6 +8,7 @@ class Contact(models.Model):
     email = models.EmailField(blank=True, null=True)
     phone = models.CharField(max_length=128)
     project_details = models.TextField()
+    ip_address = models.GenericIPAddressField(blank=True, null=True)
 
     def __str__(self):
         return str(self.name)
@@ -97,3 +98,11 @@ class Category(models.Model):
 
     def __str__(self):
         return str(self.categorys)
+
+
+class SocialMedia(models.Model):
+    name = models.CharField(max_length=128, null=True,)
+    url = models.URLField(max_length=200)
+
+    def __str__(self):
+        return str(self.name)
