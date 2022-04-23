@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    {% load static %}
+    {% load static tags %}
 
 <head>
     <!-- ========== Meta Tags ========== -->
@@ -67,18 +67,20 @@
                         <div class="f-item about">
                             <h4 class="widget-title">About Us</h4>
                             <p>
-                                Required honoured trifling eat pleasure man relation. Assurance yet bed was improving furniture man. Distrusts delighted Excuse few the remain highly feebly add people manner say. It high at my mind by roof.
-
+                              {{random | process}}
+                                Required honoured trifling eat pleasure man relation. Assurance yet bed was improving furniture man.
+                                 Distrusts delighted Excuse few the remain highly feebly add people manner say. It high at my mind by roof.
                             </p>
                             <div class="social">
                                 <ul>
                                   {% for social in socials %}
                                     <li class="{{social.name}}">
                                         <a href="{{social.url}}"><i class="fab fa-{{social.name}}"></i></a>
+                                        <!-- temlatetags Implementation -->
+                                        {{social.random | process}}
                                     </li>
                                     {% endfor %}
                                     {% comment %}
-
                                     <li class="twitter">
                                         <a href="#"><i class="fab fa-twitter"></i></a>
                                     </li>
