@@ -31,9 +31,9 @@
                     <div class="col-md-12 portfolio-content">
                         <div class="mix-item-menu text-center">
                             <button class="active" data-filter="*">All</button>
-                            {% for project in projects %}
-                            <button data-filter=".{{project.get_category_display|slugify}}">{{ project.get_category_display }}</button>
-                            {% endfor %}
+                             {% for category in categorys %}
+                            <button data-filter=".{{category.name |slugify}}">{{ category.name  }}</button>
+                             {% endfor %}
                         </div>
                         <!-- End Mixitup Nav-->
 
@@ -41,7 +41,7 @@
                             <div id="portfolio-grid" class="portfolio-items colums-3">
                                 <!-- Single Item -->
                                 {% for project in projects %}
-                                <div class="pf-item {{project.get_category_display|slugify}}">
+                                <div class="pf-item {{project.category |slugify}}">
                                     <div class="overlay">
                                         <img src="{{ project.image.crop.800x600 }}" alt="thumb">
                                         <a href="{{ project.image.crop.800x600 }}" class="item popup-link"><i class="fa fa-plus"></i></a>

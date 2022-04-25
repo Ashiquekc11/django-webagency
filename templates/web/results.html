@@ -12,16 +12,20 @@
         <div class="container">
             <div class="error-box">
                 <div class="row">
-                    <div class="col-lg-8 offset-lg-2">
+                    <div class="col offset-lg-0">
                         <h1>404</h1>
                         <h2>Sorry Page Was Not Found!</h2>
                         <p>
-                            Household shameless incommode at no objection behaviour. Especially do at
-                             he possession insensible sympathize boisterous it. Songs he on an widen
-                             me event truth. Certain law age brother sending amongst why covered.
+                        <b>Showing Result for :{{query}} </b> </br>
+                          <!-- {{results}} -->
+                          {% for result in results %}
+
+                          <li>{{result.content}}</li>
+
+                          {% endfor %}
                         </p>
                         <div class="search">
-                            <div class="input-group">
+                            <div class="input-g</b> roup">
                                 <form method= "get" action="{% url 'web:results' %}">
                                     <input type="text" placeholder="Search" class="form-control" name="q">
                                     <button type="submit">

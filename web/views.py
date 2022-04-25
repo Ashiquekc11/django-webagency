@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.urls import reverse
 from django.contrib.auth.decorators import login_required
 import json
-from .models import Author, Contact, Blog, Project, Service, Slider, Testimonial
+from .models import Author, Contact, Blog, Project, Service, Slider, Testimonial, Category
 from .forms import ContactForm
 
 
@@ -90,10 +90,12 @@ def notfound(request):
 
 def projects(request):
     projects = Project.objects.all()
+    categorys = Category.objects.all()
     # q = Project.objects.values('category').distinct()
     context = {
         "is_projects": True,
         "projects": projects,
+        "categorys": categorys,
     }
     return render(request, "web/projects.html", context)
 
@@ -135,3 +137,16 @@ def blogsinglewithsidebar(request, pk):
     blog = Blog.objects.get(pk=pk)
     context = {"is_blogsinglewithsidebar": True, "blog": blog}
     return render(request, "web/blog-single-with-sidebar.html", context)
+
+
+def results(request):
+    results = None
+    query = (request.GET.get('q'))
+    if query:
+        results = Blog.objects.filter(content__icontains=query)
+    context = {
+    "is_results": True,
+    "query": query,
+    "results": results
+    }
+    return render(request, "web/results.html", context)

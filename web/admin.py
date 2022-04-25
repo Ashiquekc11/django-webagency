@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Author, Contact, Blog, Project, Service, Slider, Testimonial, SocialMedia
+from .models import Author, Contact, Blog, Project, Service, Slider, Testimonial, SocialMedia, About, Category
 
 # Register your models here.
 admin.site.register(Contact)
@@ -10,3 +10,5 @@ admin.site.register(Project)
 admin.site.register(Service)
 admin.site.register(Testimonial)
 admin.site.register(SocialMedia)
+admin.site.register(About)
+admin.site.register(Category)

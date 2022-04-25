@@ -13,6 +13,14 @@ class Contact(models.Model):
     def __str__(self):
         return str(self.name)
 
+class About(models.Model):
+    phone = models.CharField(max_length=128)
+    email = models.EmailField(blank=True, null=True)
+    address = models.CharField(max_length=128)
+
+    def __str__(self):
+        return str(self.phone)
+
 
 class Blog(models.Model):
     CATEGORY_CHOICES = (('agency', 'Agency'), ('digital',
@@ -20,8 +28,7 @@ class Blog(models.Model):
 
     title = models.CharField(max_length=128)
     slug = models.SlugField(unique=True, null=True, blank=True)
-    category = models.CharField(
-        max_length=128, choices=CATEGORY_CHOICES, default="creative")
+    category = models.CharField(max_length=128, choices=CATEGORY_CHOICES, default="creative")
     featured_image = VersatileImageField()
     description = models.TextField()
     content = models.TextField()
@@ -56,7 +63,7 @@ class Project(models.Model):
                         ('branding', 'Branding'), ('creative', 'Creative'), )
 
     title = models.CharField(max_length=128)
-    category = models.CharField(max_length=128, choices=CATEGORY_CHOICES, default="creative")
+    category = models.ForeignKey("Category", on_delete=models.CASCADE)
     image = VersatileImageField()
     slug = models.SlugField(unique=True)
     details = models.TextField()
@@ -94,10 +101,10 @@ class Service(models.Model):
 
 
 class Category(models.Model):
-    project_categorys = models.ForeignKey("Project", on_delete=models.CASCADE, related_name="project_categorys")
+    name = models.CharField(max_length=128, null=True,)
 
     def __str__(self):
-        return str(self.categorys)
+        return str(self.name)
 
 
 class SocialMedia(models.Model):

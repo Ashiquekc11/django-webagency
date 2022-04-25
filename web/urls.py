@@ -15,4 +15,5 @@ urlpatterns = [
     path("service/<str:slug>/", views.servicesdetails, name="services-details"),
     path("blog-with-sidebar/", views.blogwithsidebar, name="blog-with-sidebar"),
     path("blog-single-with-sidebar/<str:pk>/", views.blogsinglewithsidebar, name="blog-single-with-sidebar"),
+    path("results/", views.results, name="results"),
 ]

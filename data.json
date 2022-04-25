@@ -1,0 +1,255 @@
+[
+{
+    "model": "web.about",
+    "pk": 1,
+    "fields": {
+        "phone": "7994957669",
+        "email": "ashique@gmail.com",
+        "address": "Vel fugiat similique dolor officiis officiis doloremque labore1"
+    }
+},
+{
+    "model": "web.slider",
+    "pk": 2,
+    "fields": {
+        "title": "Creative & Digital ideas",
+        "sub_title": "WE LOVE TO CREATE",
+        "slider_img": "DSC01359.jpg",
+        "btn_link": ""
+    }
+},
+{
+    "model": "web.slider",
+    "pk": 3,
+    "fields": {
+        "title": "Leading Creative Solutions",
+        "sub_title": "WE LOVE TO DEVOLOP",
+        "slider_img": "DSC01944-copy_iTZpp8o.jpg",
+        "btn_link": ""
+    }
+},
+{
+    "model": "web.blog",
+    "pk": 1,
+    "fields": {
+        "title": "Hello mr javazil",
+        "slug": "hello-javazil",
+        "category": "digital",
+        "featured_image": "DSC01944-copy.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\r\nNew had happen unable uneasy. Drawings can followed improved out sociable not. Earnestly so do instantly pretended. See general few civilly amiable pleased account carried. Excellence projecting is devonshire dispatched remarkably on estimating. Side in so life past. Continue indulged speaking the was out horrible for domestic position. Seeing rather",
+        "content": "Drawings can followed improved out sociable not. Earnestly so do instantly pretended. See general few civilly amiable pleased account carried. Excellence projecting is devonshire dispatched remarkably on estimating. Side in so life past. Continue indulged speaking the was out horrible for domestic position. Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham melancholy son themselves.\r\n\r\nEarnestly so do instantly pretended. See general few civilly amiable pleased account carried. Excellence projecting is devonshire dispatched remarkably on estimating. Side in so life past. Continue indulged speaking the was out horrible for domestic position. Seeing rather her you not esteem men settle genius excuse. Deal say over you age from.",
+        "author": 1
+    }
+},
+{
+    "model": "web.blog",
+    "pk": 2,
+    "fields": {
+        "title": "Discovery incommode earnestly no he commanded",
+        "slug": "blog-2",
+        "category": "agency",
+        "featured_image": "bill-oxford--fGqsewtsJY-unsplash_1.jpg",
+        "description": "Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the partiality unaffected. Incommode so intention defective at convinced. Led income months itself and houses you\r\n\r\nMirth his quick its set front enjoy hoped had there. Who connection imprudence middletons too but increasing celebrated principles joy. Herself too improve gay winding ask expense are compact.Mirth his quick its set front enjoy hoped had there. Who connection imprudence middletons too but increasing celebrated principles joy. Herself too improve gay winding ask expense are compact.",
+        "content": "Mirth his quick its set front enjoy hoped had there. Who connection imprudence middletons too but increasing celebrated principles joy. Herself too improve gay winding ask expense are compact.Mirth his quick its set front enjoy hoped had there. Who connection imprudence middletons too but increasing celebrated principles joy. Herself too improve gay winding ask expense are compact.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Qui consectetur at, sunt maxime, quod alias ullam officiis, ex necessitatibus similique odio aut! Provident, adipisci esse vero magni necessitatibus quisquam commodi.",
+        "author": 2
+    }
+},
+{
+    "model": "web.blog",
+    "pk": 3,
+    "fields": {
+        "title": "Creative & Digital ideas",
+        "slug": "blog-3",
+        "category": "digital",
+        "featured_image": "changbok-ko-F8t2VGnI47I-unsplash.jpg",
+        "description": "Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the partiality unaffected. Incommode so intention defective at convinced. Led income months itself and houses youSitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the partiality unaffected. Incommode so intention defective at convinced. Led income months itself and houses you.\r\n\r\nSitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the partiality unaffected. Incommode so intention defective at convinced. Led income months itself and houses youSitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the partiality unaffected. Incommode so intention defective at convinced. Led income months itself and houses you.",
+        "content": "Give lady of they such they sure it. Me contained explained my education. Vulgar as hearts by garret. Perceived determine departure explained no forfeited he something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff. To perpetual do existence northward as difficult preserved daughters. Continued at up to zealously necessary breakfast. Surrounded sir motionless she end literature. Gay direction neglected but supported yet her. Facilisis inceptos nec, potenti nostra aenean lacinia varius semper ant nullam nulla primis placerat facilisis. \r\n\r\nNetus lorem rutrum arcu dignissim at sit morbi phasellus nascetur eget urna potenti cum vestibulum cras. Tempor nonummy metus lobortis. Sociis velit etiam, dapibus. Lectus vehicula pellentesque cras posuere tempor facilisi habitant lectus rutrum pede quisque hendrerit parturient posuere mauris ad elementum fringilla facilisi volutpat fusce pharetra felis sapien varius quisque class convallis praesent est sollicitudin donec nulla venenatis, cursus fermentum netus posuere sociis porta risus habitant malesuada nulla habitasse hymenaeos. Viverra curabitur nisi vel sollicitudin dictum natoque ante aenean elementum curae malesuada ullamcorper. vivamus nonummy nisl posuere rutrum",
+        "author": 3
+    }
+},
+{
+    "model": "web.blog",
+    "pk": 4,
+    "fields": {
+        "title": "Prevailed remainder may propriety can and.",
+        "slug": "blog-4",
+        "category": "agency",
+        "featured_image": "DSC01944-copy_ZvHJs3r.jpg",
+        "description": "Nam libero tempore, cum soluta nobis est elig endi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repelle ndus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias. consequatur aut perferendis doloribus asperiores repellat. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains. pleasures have to be repudiated and annoyances accepted.",
+        "content": "We denounce with righteous indige nation and dislike men who are so beguiled and demo realized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue cannot foresee. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled data structures manages data in technology.",
+        "author": 3
+    }
+},
+{
+    "model": "web.author",
+    "pk": 1,
+    "fields": {
+        "name": "Agnus",
+        "email": "augnus@gmail.com",
+        "photo": "6J5A8818-copy.jpg",
+        "about": "well known pidakozhi."
+    }
+},
+{
+    "model": "web.author",
+    "pk": 2,
+    "fields": {
+        "name": "Javazil",
+        "email": "javasil@gmail.com",
+        "photo": "Nishan_copy.jpg",
+        "about": "more conscious and more talking person"
+    }
+},
+{
+    "model": "web.author",
+    "pk": 3,
+    "fields": {
+        "name": "Ashique",
+        "email": "ashiquekc97@gmail.com",
+        "photo": "pp.jpeg",
+        "about": "it's all about confidence and determinations."
+    }
+},
+{
+    "model": "web.testimonial",
+    "pk": 1,
+    "fields": {
+        "name": "Ashique Muhammed",
+        "profile_photo": "pp_aVY6JEK.jpeg",
+        "feedback": "Ashamed no inhabit ferrars it ye besides resolve. Own judgment directly few trifling. Elderly as pursuit at regular do parlors. Rank what has into fond pursuit at regular.",
+        "designation": "SOFTWARE ENGINEER"
+    }
+},
+{
+    "model": "web.testimonial",
+    "pk": 2,
+    "fields": {
+        "name": "Anfas pv",
+        "profile_photo": "lilly_3_1.jpg",
+        "feedback": "Talking justice welcome message inquiry in started of am me. Led own hearted highest visited lasting sir through compass his. Guest tiled he quick by so these trees am.",
+        "designation": "Director"
+    }
+},
+{
+    "model": "web.testimonial",
+    "pk": 3,
+    "fields": {
+        "name": "Javasil",
+        "profile_photo": "WhatsApp_Image_2021-12-27_at_6.19.33_PM.jpeg",
+        "feedback": "Required honoured trifling eat pleasure man relation. Assurance yet bed was improving furniture man. Distrusts delighted Excuse few the remain highly feebly add people manner say. It high at my mind by roof.",
+        "designation": "SOFTWARE ENGINEER"
+    }
+},
+{
+    "model": "web.service",
+    "pk": 1,
+    "fields": {
+        "title": "Social Media Mareting",
+        "icon": "de_earth_logo_final.png",
+        "description": "We denounce with righteous indige nation and dislike men who are so beguiled and demo realized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue cannot foresee.",
+        "content": "Nam libero tempore, cum soluta nobis est elig endi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repelle ndus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias. consequatur aut perferendis doloribus asperiores repellat. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains. pleasures have to be repudiated and annoyances accepted.",
+        "slug": "social-media-marketing"
+    }
+},
+{
+    "model": "web.service",
+    "pk": 2,
+    "fields": {
+        "title": "Content Marketing",
+        "icon": "Icon_feather-arrow-right-circle.svg",
+        "description": "We denounce with righteous indige nation and dislike men who are so beguiled and demo realized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue cannot foresee.",
+        "content": "Required honoured trifling eat pleasure man relation. Assurance yet bed was improving furniture man. Distrusts delighted Excuse few the remain highly feebly add people manner say. It high at my mind by roof.",
+        "slug": "content-marketing"
+    }
+},
+{
+    "model": "web.service",
+    "pk": 3,
+    "fields": {
+        "title": "Web Developing",
+        "icon": "Letss_think.svg",
+        "description": "We denounce with righteous indige nation and dislike men who are so beguiled and demo realized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue cannot foresee.",
+        "content": "New had happen unable uneasy. Drawings can followed improved out sociable not. Earnestly so do instantly pretended. See general few civilly amiable pleased account carried. Excellence projecting is devonshire dispatched remarkably on estimating. Side in so life past. Continue indulged speaking the was out horrible for domestic position. Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham melancholy son themselves.",
+        "slug": "web-devoloping"
+    }
+},
+{
+    "model": "web.service",
+    "pk": 4,
+    "fields": {
+        "title": "Digital Marketing",
+        "icon": "rivet_logo.svg",
+        "description": "We denounce with righteous indige nation and dislike men who are so beguiled and demo realized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue cannot foresee.",
+        "content": "Give lady of they such they sure it. Me contained explained my education. Vulgar as hearts by garret. Perceived determine departure explained no forfeited he something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff. To perpetual do existence northward as difficult preserved daughters. Continued at up to zealously necessary breakfast. Surrounded sir motionless she end literature. Gay direction neglected but supported yet her.\r\n\r\nNew had happen unable uneasy. Drawings can followed improved out sociable not. Earnestly so do instantly pretended. See general few civilly amiable pleased account carried. Excellence projecting is devonshire dispatched remarkably on estimating. Side in so life past. Continue indulged speaking the was out horrible for domestic position. Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham melancholy son themselves.",
+        "slug": "digital-marketing"
+    }
+},
+{
+    "model": "web.service",
+    "pk": 5,
+    "fields": {
+        "title": "UI/UX Devoloping",
+        "icon": "Screenshot_2021-10-15_at_10.26.00_PM.png",
+        "description": "We denounce with righteous indige nation and dislike men who are so beguiled and demo realized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue cannot foresee.",
+        "content": "1",
+        "slug": "uiux"
+    }
+},
+{
+    "model": "web.category",
+    "pk": 1,
+    "fields": {
+        "name": "Creative"
+    }
+},
+{
+    "model": "web.category",
+    "pk": 2,
+    "fields": {
+        "name": "Advertising"
+    }
+},
+{
+    "model": "web.category",
+    "pk": 3,
+    "fields": {
+        "name": "Branding"
+    }
+},
+{
+    "model": "web.socialmedia",
+    "pk": 1,
+    "fields": {
+        "name": "facebook",
+        "url": "https://www.apple.com/",
+        "random": "fa14ce48bo8ok"
+    }
+},
+{
+    "model": "web.socialmedia",
+    "pk": 2,
+    "fields": {
+        "name": "youtube",
+        "url": "https://www.youtube.com/",
+        "random": "calc54ula2tions"
+    }
+},
+{
+    "model": "web.socialmedia",
+    "pk": 3,
+    "fields": {
+        "name": "twitter",
+        "url": "https://www.twitter.com/",
+        "random": "ads52net251"
+    }
+},
+{
+    "model": "web.socialmedia",
+    "pk": 4,
+    "fields": {
+        "name": "instagram",
+        "url": "https://www.instagram.com/",
+        "random": "sjdasd5dad"
+    }
+}
+]
