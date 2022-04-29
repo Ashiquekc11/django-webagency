@@ -23,9 +23,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
 
     'web',
     'ckeditor',
+
 ]
 
 MIDDLEWARE = [
@@ -100,6 +103,8 @@ VERSATILEIMAGEFIELD_SETTINGS = {
 	'image_key_post_processor': None,
 	'progressive_jpeg': False
 }
+
+SITE_ID = 1
 
 
 # Internationalization
