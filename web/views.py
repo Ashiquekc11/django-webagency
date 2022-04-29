@@ -5,6 +5,8 @@ from django.contrib.auth.decorators import login_required
 import json
 from .models import Author, Contact, Blog, Project, Service, Slider, Testimonial, Category
 from .forms import ContactForm
+from django.db.models import Q
+
 
 
 def get_client_ip(request):
@@ -143,7 +145,7 @@ def results(request):
     results = None
     query = (request.GET.get('q'))
     if query:
-        results = Blog.objects.filter(content__icontains=query)
+        results = Blog.objects.filter(Q(content__icontains=query) | Q(title__icontains=query))
     context = {
     "is_results": True,
     "query": query,
